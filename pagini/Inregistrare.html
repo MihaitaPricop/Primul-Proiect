@@ -1,0 +1,168 @@
+<html>
+  <head>
+    <title>Formulare</title>
+    <link rel="stylesheet" href="../styles.css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body class="body_formular">
+    <div class="form_container">
+      <div class="form_title">Autentificare</div>
+      <form>
+        <div class="form_user_details">
+          <div class="input-box">
+            <label for="nume" class="details">Nume:</label>
+            <input
+              type="text"
+              placeholder="ex: Ion Ionescu"
+              id="nume"
+              name="nume"
+              required
+            />
+          </div>
+
+          <div class="input-box">
+            <label for="username" class="details">Username:</label>
+            <input
+              type="text"
+              placeholder="Introduceti doar litere"
+              id="username"
+              name="username"
+              required
+            />
+          </div>
+
+          <div class="input-box">
+            <label for="email" class="details">Email:</label>
+            <input
+              type="email"
+              placeholder="ex: ionion@gmail.com"
+              id="email"
+              name="email"
+              required
+            />
+          </div>
+
+          <div class="input-box">
+            <label for="telefon" class="details">Telefon:</label>
+            <input
+              type="text"
+              placeholder="ex: Ion Ionescu"
+              id="telefon"
+              name="telefon"
+              required
+            />
+          </div>
+
+          <div class="input-box">
+            <label for="password" class="details">Parola:</label>
+            <input
+              type="password"
+              placeholder="Minimum 8 caractere"
+              id="password"
+              name="password"
+              pattern=".{8,}"
+              required
+            />
+          </div>
+
+          <div class="input-box">
+            <label for="password" class="details">Confirmare Parola:</label>
+            <input
+              type="password"
+              placeholder="Confirmati parola"
+              id="password"
+              name="password"
+              pattern=".{8,}"
+              required
+            />
+          </div>
+        </div>
+        <div class="gender_details">
+          <label class="gender_title">Sex</label>
+          <div class="category">
+            <input type="radio" id="feminin" name="sex" />
+            <label for="feminin">Feminin</label>
+
+            <input type="radio" id="masculin" name="sex" />
+            <label for="masculin">Masculin</label>
+
+            <input type="radio" id="altul" name="sex" />
+            <label for="altul">Altul</label>
+          </div>
+        </div>
+        <div class="form_button">
+          <div>
+            <input type="submit" value="Înregistrare" />
+          </div>
+
+          <div>
+            <a href="/despre.html">
+              <input type="button" value="Înapoi" />
+            </a>
+          </div>
+        </div>
+      </form>
+    </div>
+  </body>
+</html>
+
+<!-- <label for="form_prenume">Prenume</label>
+          <input
+            type="text"
+            placeholder="ex: Ionescu"
+            id="prenume"
+            name="prenume"
+          />
+          <br />
+          <label for="form_email">Email:</label>
+          <input
+            type="email"
+            placeholder="ex: alina.ionescu@gmail.com"
+            name="email"
+            id="email"
+          />
+          <br />
+          <label for="form_parola">Parola:</label>
+          <input
+            type="password"
+            placeholder="Introduceti Parola"
+            name="parola"
+            id="parola"
+          />
+        </div> -->
+<!-- 
+        <div class="form_field_bife">
+          <label for="bifaCampanie"
+            >Trimite campanii de marketing pe email</label
+          >
+          <input type="checkbox" id="bifaCampanie" name="campanie" />
+        </div> -->
+
+<!-- 
+        <div class="button">
+          <label>Sunteti deacord cu procesarea datelor personale?</label>
+          <br />
+          <label for="procesareDate1">Da</label>
+          <input
+            type="radio"
+            name="procesareDate"
+            id="procesareDate1"
+            value="da"
+          />
+          <label for="procesareDate2">Nu</label>
+          <input
+            type="radio"
+            name="procesareDate"
+            id="procesareDate2"
+            value="nu"
+          />
+        </div>
+        
+        <button>Trimite</button>
+        <button type="button">Nu trimite</button> -->
