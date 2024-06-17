@@ -458,22 +458,26 @@ form .form_user_details .input-box {
   width: auto;
   position: absolute;
   top: 0;
-  left: 0;
+  left: 10px;
+  border-radius: 30%;
 }
 
 .git_nav_container {
   padding: 20px;
   display: flex;
   background: linear-gradient(100deg, #db5507, #f7f7f5);
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
 }
 
 .git_nav_list {
   justify-content: right;
-  gap: 30px;
+  gap: 90px;
 }
 .git_nav_list li {
   display: inline-flex;
-  justify-content: space-between;
+  justify-content: start;
   font-size: 25px;
   font-weight: 500;
   gap: 100px;
@@ -481,4 +485,10 @@ form .form_user_details .input-box {
 
 .git_nav_list li a:hover {
   color: #e9090953;
+}
+
+/* ----------------------------------------GitHUb----------------------------- */
+
+.gitgub_nav_images {
+  margin-bottom: 40px;
 }
