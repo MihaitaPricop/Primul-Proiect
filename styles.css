@@ -401,13 +401,11 @@ form .form_user_details .input-box {
   padding: 20px;
   background: linear-gradient(100deg, #008cba, #ccc);
   display: flex;
-  /* flex-wrap: wrap;
-  justify-content: space-evenly; */
 }
 
 .tools_nav_images img {
-  height: 50px;
-  width: 50px;
+  height: 70px;
+  width: 70px;
   margin-left: 0;
 }
 .tools_nav_list {
@@ -422,9 +420,65 @@ form .form_user_details .input-box {
   font-size: 25px;
   font-weight: 500;
   gap: 100px;
-  font-family: Arial, Helvetica, sans-serif;
+}
+
+.tools_nav_list li a:hover {
+  color: #0c8eca;
+}
+
+.tools_nav_list li:hover {
+  color: #ca780c;
 }
 
 .tools_nav_list li a {
   text-decoration: none;
+}
+.tools_content {
+  margin-left: 40px;
+  margin-right: 40px;
+  font-size: 18px;
+}
+.tools_content p {
+  line-height: 25px;
+}
+.tools_content h1 {
+  font-weight: 550;
+}
+.tools_content ol li a {
+  text-decoration: none;
+  color: #ca780c;
+  font-size: larger;
+}
+
+/* --------------------------------Git--------------------- */
+
+.git_nav_images img {
+  height: 101px;
+  margin: 0;
+  width: auto;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.git_nav_container {
+  padding: 20px;
+  display: flex;
+  background: linear-gradient(100deg, #db5507, #f7f7f5);
+}
+
+.git_nav_list {
+  justify-content: right;
+  gap: 30px;
+}
+.git_nav_list li {
+  display: inline-flex;
+  justify-content: space-between;
+  font-size: 25px;
+  font-weight: 500;
+  gap: 100px;
+}
+
+.git_nav_list li a:hover {
+  color: #e9090953;
 }
