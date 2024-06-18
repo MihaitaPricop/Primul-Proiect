@@ -3,7 +3,7 @@
   <head>
     <title>Index Page</title>
 
-    <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="./styles.css" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -12,252 +12,452 @@
       rel="stylesheet"
     />
   </head>
-  <body class="index_body">
-    <div class="top_nav_index">
-      <p><a href="./despre.html">Acasa</a></p>
-      <p><a href="./pagini/tabele.html">Tabele</a></p>
-      <p><a href=".//sesiunea_3/pagini/wikipedia.html">Wikipedia</a></p>
-      <p><a href="./pagini/multimedia.html">Multimedia</a></p>
-      <p><a href="./pagini/css.html">CSS</a></p>
-      <p><a href="./pagini/inregistrare.html">Formulare</a></p>
+  <body>
+    <div class="header_image">
+      <div class="top_nav_index">
+        <p><a href="./despre.html">Acasa</a></p>
+        <p><a href="./pagini/tabele.html">Tabele</a></p>
+        <p><a href="./pagini/wikipedia.html">Wikipedia</a></p>
+        <p><a href="./pagini/multimedia.html">Multimedia</a></p>
+        <p><a href="./pagini/css.html">CSS</a></p>
+        <p><a href="./pagini/inregistrare.html">Autentificare</a></p>
+      </div>
+      <br />
+      <h1 class="main_title">Prima pagina HTML</h1>
     </div>
-    <h1>Prima pagina HTML</h1>
     <hr />
-    <section>
-      <h2>Introducere in HTML</h2>
-      <h3>Ce este HTML?</h3>
-      <p>
-        <strong>HTML (HyperText Markup Language)</strong> este folosit pentru a
-        crea pagini web. Folosește taguri și atribute HTML pentru a descrie
-        structura și formatarea unei pagini web.<br />
-        HTML este scris cu diferite elemente, care sunt responsabile pentru a
-        spune motoarelor de căutare cum să afișeze conținutul paginii. De
-        exemplu, titluri, liste, imagini, link-uri și multe altele.
-      </p>
-      <p>
-        HTML folosește <strong>taguri și elemente</strong> predefinite care
-        instruiesc browser-ul cum să afișeze conținutul. Elementele HTML includ
-        o etichetă de deschidere, un anumit conținut și o etichetă de închidere.
-        Este important să rețineți că includeți etichete de închidere. Dacă este
-        omis, browserul aplică efectul etichetei de deschidere până la sfârșitul
-        paginii. Această secțiune se va scufunda în structura de bază a unei
-        pagini HTML, care include elemente esențiale ale blocului de
-        construcție, cum ar fi declarația doctype, HTML, elementele head, title
-        și body.
-      </p>
-      <p>
-        <strong>Structura de bază a unei pagini HTML</strong> este prezentată
-        mai jos. Conține elementele esențiale ale blocului de construcție (de
-        exemplu, declarația doctype, HTML, elementele head, title și body) pe
-        baza cărora sunt create toate paginile web.
-      </p>
-      <ul>
-        <li>
-          &lt;!DOCTYPE html> - Aceasta este declarația tipului de document (nu
-          din punct de vedere tehnic o etichetă). Acesta declară un document ca
-          fiind un document HTML. Declarația doctype nu face distincție între
-          majuscule și minuscule.
-        </li>
-        <li>
-          &lt;html> - Acesta se numește elementul rădăcină HTML. Toate celelalte
-          elemente sunt conținute în el.
-        </li>
-        <li>
-          &lt;head> - Eticheta head conține elementele „din culise” pentru o
-          pagină web. Elementele din cap nu sunt vizibile pe partea din față a
-          unei pagini web. Elementele HTML utilizate în interiorul elementului
-          &lt;head> includ:
+    <div class="index_body">
+      <section>
+        <h2>Introducere in HTML</h2>
+        <h3>Ce este HTML?</h3>
+        <p>
+          <strong
+            ><a href="./pagini/wikipedia.html">HTML </a>(HyperText Markup
+            Language)</strong
+          >
+          este folosit pentru a crea pagini web. Folosește taguri și atribute
+          HTML pentru a descrie structura și formatarea unei pagini web.<br />
+          HTML este scris cu diferite elemente, care sunt responsabile pentru a
+          spune motoarelor de căutare cum să afișeze conținutul paginii. De
+          exemplu, titluri, liste, imagini, link-uri și multe altele.
+        </p>
+        <p>
+          <b>HTML</b> folosește <strong>taguri și elemente</strong> predefinite
+          care instruiesc browser-ul cum să afișeze conținutul. Elementele HTML
+          includ o etichetă de deschidere, un anumit conținut și o etichetă de
+          închidere. Este important să rețineți că includeți etichete de
+          închidere. Dacă este omis, browserul aplică efectul etichetei de
+          deschidere până la sfârșitul paginii. Această secțiune se va scufunda
+          în structura de bază a unei pagini HTML, care include elemente
+          esențiale ale blocului de construcție, cum ar fi declarația doctype,
+          HTML, elementele head, title și body.
+        </p>
+        <p>
+          <strong>Structura de bază a unei pagini HTML</strong> este prezentată
+          mai jos. Conține elementele esențiale ale blocului de construcție (de
+          exemplu, declarația doctype, HTML, elementele head, title și body) pe
+          baza cărora sunt create toate paginile web.
+        </p>
+        <ul>
+          <li>
+            <a href="https://www.w3schools.com/tags/tag_doctype.ASP">
+              &lt;!DOCTYPE html></a
+            >
+            - Aceasta este declarația tipului de document (nu din punct de
+            vedere tehnic o etichetă). Acesta declară un document ca fiind un
+            document HTML. Declarația doctype nu face distincție între majuscule
+            și minuscule.
+          </li>
+          <li>
+            <a href="https://www.w3schools.com/tags/tag_html.asp"> &lt;html></a>
+            - Acesta se numește elementul rădăcină HTML. Toate celelalte
+            elemente sunt conținute în el.
+          </li>
+          <li>
+            <a href="https://www.w3schools.com/tags/tag_head.asp"> &lt;head></a>
+            - Eticheta head conține elementele „din culise” pentru o pagină web.
+            Elementele din cap nu sunt vizibile pe partea din față a unei pagini
+            web. Elementele HTML utilizate în interiorul elementului &lt;head>
+            includ:
+            <ul>
+              <li>
+                <a href="https://www.w3schools.com/tags/tag_style.asp">
+                  &lt;style></a
+                >
+                - Această etichetă HTML ne permite să inserăm stil în paginile
+                noastre web și să le facem atractive pentru a le privi cu
+                ajutorul CSS.
+              </li>
+              <li>
+                <a href="https://www.w3schools.com/tags/tag_title.asp">
+                  &lt;title></a
+                >
+                - Titlul este ceea ce este afișat în partea de sus a browserului
+                dvs. atunci când vizitați un site web și conține titlul paginii
+                web pe care o vizualizați.
+              </li>
+              <li>
+                <a href="https://www.w3schools.com/tags/tag_link.asp">
+                  &lt;link></a
+                >
+                - Eticheta „link” este folosită pentru a lega HTML, CSS și
+                JavaScript. Se auto-închide.
+              </li>
+            </ul>
+          </li>
+
+          <li>
+            <a href="https://www.w3schools.com/tags/tag_body.asp"> &lt;body></a>
+            - Eticheta body este folosită pentru a include tot conținutul
+            vizibil al unei pagini web. Cu alte cuvinte, conținutul corpului
+            este ceea ce browserul va afișa pe front end.
+          </li>
+        </ul>
+      </section>
+      <hr />
+      <h3>Taguri si elemente populare in HTML</h3>
+      <section class="section_container gap_50px">
+        <div class="div_left">
+          <p>
+            Elementele de bază ale HTML, inclusiv etichetele, atributele,
+            elementele și structura documentului, toate acestea se reunesc
+            pentru a forma o pagină web funcțională.
+          </p>
+          <p>
+            Detalii despre tagul paragraf
+            <a href="https://www.w3schools.com/tags/tag_p.asp"
+              ><strong>&lt;P&gt;:</strong></a
+            >
+          </p>
+          <ul>
+            <li>Unul dintre cele mai folosite taguri.</li>
+            <li>Este folosit pentru paragafe</li>
+          </ul>
+          <p>
+            Un alt element popular este
+            <a href="https://www.w3schools.com/html/html_headings.asp"
+              ><strong>headingul</strong></a
+            >. Headingurile pot fi de mai multe tipuri. Ele se diferentiaza prin
+            numere.
+          </p>
+          <p>
+            Cel mai mare heading si cel mai important este <strong>h1</strong>,
+            si cel mai mic este <strong>h6</strong>.
+          </p>
+        </div>
+        <div class="div_right">
+          <ul>
+            <li><h1>Acesta este un heading &lt;H1&gt;</h1></li>
+            <li><h2>Acesta este un heading &lt;H2&gt;</h2></li>
+            <li><h3>Acesta este un heading &lt;H3&gt;</h3></li>
+            <li><h4>Acesta este un heading &lt;H4&gt;</h4></li>
+            <li><h5>Acesta este un heading &lt;H5&gt;</h5></li>
+            <li><h6>Acesta este un heading &lt;H6&gt;</h6></li>
+          </ul>
+        </div>
+      </section>
+      <section>
+        <p>
+          &#9737;
+          <a href="https://www.w3schools.com/tags/tag_br.asp"
+            ><strong>Brake</strong></a
+          >
+          sau <strong> &lt;br></strong> este folosit pentru a introduce o
+          singură întrerupere de linie și nu necesită o etichetă de închidere.
+        </p>
+        <p>
+          &#9737;
+          <a href="https://www.w3schools.com/tags/tag_span.asp"
+            ><strong>Spanul</strong></a
+          >
+          este un subelement, folosit pentru a selecta si manipula un cuvant o
+          propozitie sau o fraza.
+        </p>
+        <p>
+          &#9737;
+          <a href="https://www.w3schools.com/tags/tag_hr.asp"
+            ><strong>Hr</strong></a
+          >
+          este un element folosit pentru a adauga o linie spatiu sub forma de
+          linie &lt;hr/&gt;. Nici acesta nu are nevoie de tag de inchidere.
+        </p>
+        <p>
+          &#9737;
+          <a href="https://www.w3schools.com/tags/tag_sup.asp"
+            ><strong>Sup ( &lt;sup> ) </strong></a
+          >
+          definește textul superscript. Textul în indice apare cu o jumătate de
+          caracter deasupra liniei normale și uneori este redat într-un font mai
+          mic. Textul suprascript poate fi folosit pentru note de subsol, cum ar
+          fi WWW<sup>[1]</sup>.<br />Alte elemente de formatare folosite:
+        </p>
+        <div>
           <ul>
             <li>
-              &lt;style> - Această etichetă HTML ne permite să inserăm stil în
-              paginile noastre web și să le facem atractive pentru a le privi cu
-              ajutorul CSS.
+              <a href="https://www.w3schools.com/tags/tag_b.asp">&lt;b></a> -
+              Bold text
             </li>
             <li>
-              &lt;title> - Titlul este ceea ce este afișat în partea de sus a
-              browserului dvs. atunci când vizitați un site web și conține
-              titlul paginii web pe care o vizualizați.
+              <a href="https://www.w3schools.com/tags/tag_strong.asp"
+                >&lt;strong></a
+              >
+              - Important text
             </li>
             <li>
-              &lt;link> - Eticheta „link” este folosită pentru a lega HTML, CSS
-              și JavaScript. Se auto-închide.
+              <a href="https://www.w3schools.com/tags/tag_i.asp">&lt;i></a> -
+              Italic text
+            </li>
+            <li>
+              <a href="https://www.w3schools.com/tags/tag_em.asp">&lt;em></a> -
+              Emphasized text
+            </li>
+            <li>
+              <a href="https://www.w3schools.com/tags/tag_mark.asp"
+                >&lt;mark></a
+              >
+              - Marked text
+            </li>
+            <li>
+              <a href="https://www.w3schools.com/tags/tag_small.asp"
+                >&lt;small></a
+              >
+              - Smaller text
+            </li>
+            <li>
+              <a href="https://www.w3schools.com/tags/tag_del.asp">&lt;del></a>
+              - Deleted text
+            </li>
+            <li>
+              <a href="https://www.w3schools.com/tags/tag_sub.asp">&lt;sub></a>
+              - Subscript text
             </li>
           </ul>
-        </li>
+        </div>
+        <p>
+          Toate informatiile despre HTML, sau cel putin o buna parte, pot fi
+          gasite pe <a href="https://www.google.com/">google</a>.
+        </p>
+        <p>
+          &#9737;
+          <a href="https://www.w3schools.com/tags/tag_style.asp"
+            ><strong>Style</strong></a
+          >
+          este un tag folosit pentru stilizarea paginii. Acesta poate fi folosit
+          inline in interiorul tag-ului, in Head sau importat dintr-un fisier
+          separat de tip style.css.
+        </p>
+        <p>
+          &#9737;
+          <a href="https://www.w3schools.com/tags/tag_div.asp"
+            ><strong>Div</strong></a
+          >
+          este un block-element/container folosit pentru a grupa mai multe
+          elemente impreuna, eg:
+        </p>
+        <div class="container">
+          <div style="background-color: red">Red</div>
+          <div style="background-color: yellow">Yellow</div>
+          <div style="background-color: blue">Blue</div>
+        </div>
+        <p>
+          &#9737;
+          <strong
+            ><a href="https://www.w3schools.com/tags/tag_section.asp"
+              >Section</a
+            > </strong
+          >este un tag ce defineste o sectiune intr-un document.
+        </p>
+        <p>
+          &#9737;
+          <strong
+            ><a href="https://www.w3schools.com/tags/tag_nav.asp"
+              >Nav</a
+            ></strong
+          >
+          tag defineste un set de link-uri navigabile. Nu toate link-urile unui
+          document trebuie sa fie intr-un element de tip &lt;nav>. Acest element
+          este folosit in mare parte pentru blocuri majore de link-uri pentru
+          navigatie.
+        </p>
 
-        <li>
-          &lt;body> - Eticheta body este folosită pentru a include tot
-          conținutul vizibil al unei pagini web. Cu alte cuvinte, conținutul
-          corpului este ceea ce browserul va afișa pe front end.
-        </li>
-      </ul>
-    </section>
-    <hr />
-    <section>
-      <h3>Taguri si elemente populare in HTML</h3>
-      <p>
-        Elementele de bază ale HTML, inclusiv etichetele, atributele, elementele
-        și structura documentului, toate acestea se reunesc pentru a forma o
-        pagină web funcțională.
-      </p>
-      <p>Detalii despre tagul paragraf <strong>&lt;P&gt;:</strong></p>
-      <ul>
-        <li>Unul dintre cele mai folosite taguri.</li>
-        <li>Este folosit pentru paragafe</li>
-      </ul>
-      <p>
-        Un alt element popular este <strong>headingul</strong>. Headingurile pot
-        fi de mai multe tipuri. Ele se diferentiaza prin numere.
-      </p>
-      <p>Headingurile sunt de mai multe tipuri:</p>
-      <ul>
-        <li><h1>Acesta este un heading &lt;H1&gt;</h1></li>
-        <li><h2>Acesta este un heading &lt;H2&gt;</h2></li>
-        <li><h3>Acesta este un heading &lt;H3&gt;</h3></li>
-        <li><h4>Acesta este un heading &lt;H4&gt;</h4></li>
-        <li><h5>Acesta este un heading &lt;H5&gt;</h5></li>
-        <li><h6>Acesta este un heading &lt;H6&gt;</h6></li>
-      </ul>
-      <p>
-        Cel mai mare heading si cel mai important este <strong>h1</strong>, si
-        cel mai mic este <strong>h6</strong>.
-      </p>
-      <p>
-        <strong>Brake</strong> sau <strong> &lt;br></strong> este folosit pentru
-        a introduce o singură întrerupere de linie și nu necesită o etichetă de
-        închidere.
-      </p>
-      <p>
-        <strong>Spanul</strong> este un subelement, folosit pentru a selecta si
-        manipula un cuvant o propozitie sau o fraza.
-      </p>
-      <p>
-        <strong>hr</strong> este un element folosit pentru a adauga o linie
-        spatiu sub forma de linie &lt;hr/&gt;. Nici acesta nu are nevoie de tag
-        de inchidere.
-      </p>
-      <p>
-        <strong>Sup ( &lt;sup> ) </strong> definește textul superscript. Textul
-        în indice apare cu o jumătate de caracter deasupra liniei normale și
-        uneori este redat într-un font mai mic. Textul suprascript poate fi
-        folosit pentru note de subsol, cum ar fi WWW<sup>[1]</sup>.<br />Alte
-        elemente de formatare folosite:
-      </p>
-      <div>
-        <ul>
-          <li>&lt;b> - Bold text</li>
-          <li>&lt;strong> - Important text</li>
-          <li>&lt;i> - Italic text</li>
-          <li>&lt;em> - Emphasized text</li>
-          <li>&lt;mark> - Marked text</li>
-          <li>&lt;small> - Smaller text</li>
-          <li>&lt;del> - Deleted text</li>
-          <li>&lt;sub> - Subscript text</li>
-        </ul>
-      </div>
-      <p>
-        Toate informatiile despre HTML, sau cel putin o buna parte, pot fi
-        gasite pe <a href="https://www.google.com/">google</a>.
-      </p>
-      <p>
-        <strong>Style</strong> este un tag folosit pentru stilizarea paginii.
-        Acesta poate fi folosit inline in interiorul tag-ului, in Head sau
-        importat dintr-un fisier separat de tip style.css.
-      </p>
-      <p>
-        <strong>Div</strong> este un block-element/container folosit pentru a
-        grupa mai multe elemente impreuna, eg:
-      </p>
-      <div class="container">
-        <div style="background-color: red">Red</div>
-        <div style="background-color: yellow">Yellow</div>
-        <div style="background-color: blue">Blue</div>
-      </div>
-      <p>
-        <strong>Section </strong>este un tag ce defineste o sectiune intr-un
-        document.
-      </p>
-      <p>
-        <strong
-          ><a href="https://www.w3schools.com/tags/tag_nav.asp">Nav</a></strong
-        >
-        tag defineste un set de link-uri navigabile. Nu toate link-urile unui
-        document trebuie sa fie intr-un element de tip &lt;nav>. Acest element
-        este folosit in mare parte pentru blocuri majore de link-uri pentru
-        navigatie.
-      </p>
+        <p>
+          &#9737;
+          <strong><a href="./pagini/tabele.html">Entities</a> </strong> sunt
+          niste grupari de litere, semne si numere care deservesc la proiectarea
+          in pagina a caracterelor speciale de tip &copy;, &reg;, &amp;...<br />Atunci
+          cand dorim sa afisam aceste HTML Character Entities asa cum sunt ele
+          scrise, putem folosi face un breakdown al gruparii<strong>
+            (&pound;) &amp;pound;</strong
+          >
+          folosind pentru <strong>&amp;</strong>, &amp; + amp; urmat de restul
+          caracterelor <strong>pound;</strong>.
+        </p>
+        <p>
+          &#9737;
+          <a href="https://www.w3schools.com/html/html_comments.asp"
+            ><strong>Comentariile HTML</strong></a
+          >
+          sunt incluse în &lt;!– și –> și servesc la adnotarea codului pentru
+          dezvoltatori. Acestea oferă explicații, mementouri sau instrucțiuni
+          care sunt invizibile pe pagina web redată. Aceste comentarii ajută la
+          colaborare și îmbunătățesc lizibilitatea codului, oferind perspective
+          asupra structurii și scopului codului.
+        </p>
+      </section>
+      <hr />
+      <section>
+        <h3>Atributele HTML</h3>
+        <p>
+          <a href="https://www.w3schools.com/tags/ref_attributes.asp"
+            ><b>Atributele HTML</b></a
+          >
+          oferă informații suplimentare despre elemente. Specificate în eticheta
+          de început, atributele vin de obicei în perechi nume/valoare, cum ar
+          fi mane=”value”. Atributele definesc proprietățile și comportamentul,
+          influențând afișarea conținutului și interacțiunea pe paginile web.
+        </p>
+        <p>Cele mai folosite atribute sunt:</p>
+        <div>
+          <ul class="height_line_25px">
+            <li>
+              id - un identificator unic pentru un element HTML, folosit pentru
+              stil sau interacțiune JavaScript.
+              <span class="textbox_code">ID="ID_name"</span>
+            </li>
+            <li>
+              class - definește unul sau mai multe nume de clasă pentru un
+              element, utilizate pentru stilizarea și aplicarea regulilor CSS.
+              <span class="textbox_code">class="Class_name"</span>
+            </li>
+            <li>
+              src - specifică adresa URL sursă pentru resurse externe, cum ar fi
+              imagini, audio sau video.
+              <span class="textbox_code">src="link-ul_sursa"</span>
+            </li>
+            <li>
+              href - specifică adresa URL a resursei legate, utilizată de obicei
+              în elementele ancora (a) pentru hyperlinkuri.
+              <span class="textbox_code"
+                >&lt;a href="link"&gt;Text descriptiv&lt;/a&gt;</span
+              >
+            </li>
+            <li>
+              alt - oferă text alternativ pentru imagini, afișat dacă imaginea
+              nu poate fi încărcată sau nu este disponibilă.
+              <span class="textbox_code">alt="Text_descriptiv"</span>
+            </li>
+            <li>
+              width si height, sunt atribute care ofera detalii despre
+              dimensiunea imaginii.
+            </li>
+            <li>
+              style este un atribut care atribuie multiple optiuni de stilizare
+              unei linii de cod in html, aceasta optiune numita si in-line
+              styling. Cateva dintre acestea pot fi: background-color, color,
+              font-family, font-size, text-align.
+              <span class="textbox_code"
+                >&lt;tagname style="<span
+                  style="font-style: italic; color: brown"
+                  >property:value;</span
+                >"&gt;</span
+              >
+            </li>
+          </ul>
+        </div>
 
-      <p>
-        <strong><a href="pagini/tabele.html">Entities</a> </strong> sunt niste
-        grupari de litere, semne si numere care deservesc la proiectarea in
-        pagina a caracterelor speciale de tip &copy;, &reg;, &amp;...<br />Atunci
-        cand dorim sa afisam aceste HTML Character Entities asa cum sunt ele
-        scrise, putem folosi face un breakdown al gruparii<strong>
-          (&pound;) &amp;pound;</strong
-        >
-        folosind pentru <strong>&amp;</strong>, &amp; + amp; urmat de restul
-        caracterelor <strong>pound;</strong>.
-      </p>
-      <p>
-        <strong>Comentariile HTML</strong> sunt incluse în &lt;!– și –> și
-        servesc la adnotarea codului pentru dezvoltatori. Acestea oferă
-        explicații, mementouri sau instrucțiuni care sunt invizibile pe pagina
-        web redată. Aceste comentarii ajută la colaborare și îmbunătățesc
-        lizibilitatea codului, oferind perspective asupra structurii și scopului
-        codului.
-      </p>
-    </section>
-    <hr />
-    <section>
-      <h3>Atributele HTML</h3>
-      <p>
-        Atributele HTML oferă informații suplimentare despre elemente.
-        Specificate în eticheta de început, atributele vin de obicei în perechi
-        nume/valoare, cum ar fi mane=”value”. Atributele definesc proprietățile
-        și comportamentul, influențând afișarea conținutului și interacțiunea pe
-        paginile web.
-      </p>
-      <p>Cele mai folosite atribute sunt:</p>
-      <ul>
-        <li>
-          id - un identificator unic pentru un element HTML, folosit pentru stil
-          sau interacțiune JavaScript. (ID="ID_name")
-        </li>
-        <li>
-          class - definește unul sau mai multe nume de clasă pentru un element,
-          utilizate pentru stilizarea și aplicarea regulilor CSS.
-          (class="Class_name")
-        </li>
-        <li>
-          src - specifică adresa URL sursă pentru resurse externe, cum ar fi
-          imagini, audio sau video. (src="link-ul_sursa")
-        </li>
-        <li>
-          href - specifică adresa URL a resursei legate, utilizată de obicei în
-          elementele ancora (a) pentru hyperlinkuri. (&lt;a href="link"&gt;Text
-          descriptiv&lt;/a&gt;)
-        </li>
-        <li>
-          alt - oferă text alternativ pentru imagini, afișat dacă imaginea nu
-          poate fi încărcată sau nu este disponibilă. (alt="Text_descriptiv")
-        </li>
-        <li>
-          width si height, sunt atribute care ofera detalii despre dimensiunea
-          imaginii.
-        </li>
-        <li>
-          style este un atribut care atribuie multiple optiuni de stilizare unei
-          linii de cod in html, aceasta optiune numita si in-line styling.
-          Cateva dintre acestea pot fi: background-color, color, font-family,
-          font-size, text-align. (&lt;tagname style="<span
-            style="font-style: italic; color: brown"
-            >property:value;</span
-          >"&gt;
-        </li>
-      </ul>
-      <p>
-        Sintaxa: <strong>&lt;element attribute_name= "attribute_value"></strong>
-      </p>
-    </section>
+        <p>
+          Sintaxa:
+          <span class="textbox_code"
+            >&lt;element attribute_name= "attribute_value"></span
+          >
+        </p>
+      </section>
+      <hr />
+      <h3>Culorile HTML</h3>
+      <section class="section_container gap_50px">
+        <div class="div_left">
+          <p>
+            Un cod de culoare HTML este un identificator folosit pentru a
+            reprezenta o culoare pe web. Codurile de culoare sunt modalități de
+            a reprezenta culorile pe care le vedem zilnic într-un format pe care
+            un computer îl poate interpreta și afișa. Folosit în mod obișnuit în
+            site-uri web și în alte aplicații software, există o varietate de
+            formate. Cele două care vor fi introduse aici sunt codurile de
+            culoare hexadecimale și codurile de culoare RGB .
+          </p>
+          <h4>Culoare RGB</h4>
+          <p>
+            O culoare în modelul de culoare RGB este descrisă indicând cât de
+            mult este inclusă fiecare dintre <b>roșu</b> , <b>verde</b> și
+            <b>albastru</b> . Culoarea este exprimată ca un triplet RGB ( r , g
+            , b ), fiecare componentă a căruia poate varia de la zero la o
+            valoare maximă definită.
+            <b>Dacă toate componentele sunt la zero, rezultatul este negru</b>;
+            dacă toate sunt la maximum, rezultatul este cel mai strălucitor alb
+            reprezentabil. În computere, valorile componentelor sunt adesea
+            stocate ca numere întregi în intervalul de la 0 la 255, intervalul
+            pe care îl poate oferi un singur octet de 8 biți .
+          </p>
+          <ul>
+            <li>
+              <a href="https://www.rapidtables.com/web/color/RGB_Color.html"
+                >Graficul codurilor de culoare RG</a
+              >
+            </li>
+            <li>
+              <a
+                href="https://www.rapidtables.com/convert/color/rgb-to-hex.html"
+                >Convertor RGB în Hex</a
+              >
+            </li>
+          </ul>
+        </div>
+        <div class="img_color_table">
+          <img src="./images/color_table.png" />
+        </div>
+        <div class="div_left">
+          <h4>Coduri de culoare hexadecimale</h4>
+          <p>
+            Cele mai populare sunt codurile de culoare Hex; numere hexazecimale
+            de trei octeți (adică sunt formate din șase cifre), cu fiecare octet
+            sau pereche de caractere în codul hexadecimal, reprezentând
+            intensitatea culorii roșu, verde și, respectiv, albastru.
+          </p>
+        </div>
+        <div>
+          <p class="div_right hex_formula background_color_none">
+            # <span class="hex_formula_red"> XX </span>
+            <span class="hex_formula_green"> XX </span>
+            <span class="hex_formula_blue"> XX </span>
+          </p>
+        </div>
+      </section>
+      <br />
+      <hr class="hr_solid_5px_grey" />
+      <section class="section_container gap_50px flex_direction_row">
+        <div class="div_left background_color_none">
+          <h2>CSS (Cascading Style Sheets)</h2>
+          <p>
+            Cascading Style Sheets (CSS) este folosit pentru a formata aspectul
+            unei pagini web.
+          </p>
+          <p>
+            Cu CSS, puteți controla culoarea, fontul, dimensiunea textului,
+            distanța dintre elemente, modul în care sunt poziționate și aranjate
+            elementele, ce imagini de fundal sau culori de fundal vor fi
+            utilizate, diferite afișaje pentru diferite dispozitive și
+            dimensiuni de ecran și mult mai mult!
+          </p>
+          <p>
+            Pentru mai multe informatii despre CSS, accesati linkul numit CSS
+            din navigatie sau click
+            <b><a href="http://127.0.0.1:5500/pagini/css.html">AICI.</a></b>
+          </p>
+        </div>
+        <div class="div_right background_color_none">
+          <img src="./images/CSS_vs_html.jpg" class="image_css_vs_html" />
+        </div>
+      </section>
+    </div>
   </body>
 </html>

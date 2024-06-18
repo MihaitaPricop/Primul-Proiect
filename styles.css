@@ -21,16 +21,28 @@ body {
   background-image: url(/images/background_main_white.jpg);
 }
 
-.top_nav_index {
-  display: flex;
-  justify-content: space-around;
-  flex-direction: row;
-  font-weight: bold;
-  font-size: x-large;
-  color: #777;
-  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
-    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+.header_image {
+  background-image: url(./images/webdev_navbar.jpg);
+  background-repeat: no-repeat;
+  margin: 0;
+  padding: 0;
+  background-size: cover;
+  height: 250px;
+  padding: 25px;
 }
+
+.main_title {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  font-weight: 800;
+  font-size: 55px;
+  color: rgb(233, 232, 232);
+
+  border-radius: 20px;
+}
+
 .top_nav {
   display: flex;
   justify-content: space-between;
@@ -74,7 +86,91 @@ div.container div {
   display: inline-block;
 }
 
-/*-----------------------------------------------------------Despre----------------------------------------*/
+/*-------flex -------*/
+
+.section_container {
+  display: flex;
+  justify-content: flex-start;
+  margin: 0;
+  padding: 0;
+  flex-wrap: wrap;
+}
+
+.gap_50px {
+  gap: 50px;
+}
+
+.div_left {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  width: 46%;
+  background-color: #77777744;
+  padding-left: 10px;
+}
+
+.div_right {
+  /* flex: 1; */
+  width: 50%;
+  background-color: #77777744;
+}
+
+.image_css_vs_html {
+  width: fit-content;
+  height: auto;
+  float: right;
+}
+
+.hr_solid_5px_grey {
+  border: 5px solid rgba(128, 128, 128, 0.5);
+  border-radius: 5px;
+  box-shadow: inset 0 12px 12px -12px rgba(0, 0, 0, 0.5);
+}
+
+/* --------display GRID -----------*/
+
+/* .container_grid {
+  display: grid;
+  grid-template-columns: auto auto;
+}
+
+.container_child_grid {
+  height: auto;
+  margin: 10px;
+  text-align: center;
+  line-height: 75px;
+  font-size: 30px;
+} */
+
+/*-------------------------*/
+a {
+  text-decoration: none;
+}
+
+p {
+  line-height: 25px;
+}
+
+.height_line_25px {
+  line-height: 25px;
+}
+.textbox_code {
+  padding: 2px 10px 2px 10px;
+  border: none;
+  border-radius: 5px;
+  background-color: #f7f4f463;
+  text-align: center;
+  margin: 16px 0;
+  box-shadow: 2px 2px 5px #7c7b7b, 0px 0px 0px #131313, 0px 0px 0px #f7f5f5;
+  border-radius: 6px;
+}
+
+.display_center {
+}
+/* .indented-text {
+  text-indent: 60px;} /* Indents the first line of text */
+
+/*-----------------------------------------------Despre----------------------------------------*/
 
 .main_header {
   background-position: center;
@@ -90,6 +186,9 @@ div.container div {
   font-weight: bold;
   font-size: x-large;
   color: #777;
+  gap: 30px;
+  margin: 0;
+  padding: 0;
 }
 
 .top_nav_despre div p {
@@ -97,15 +196,35 @@ div.container div {
   margin: 29.88px;
 }
 .top_nav_despre p a {
+  color: rgb(250, 124, 20);
+  font-weight: bold;
+  font-size: 1.1em;
+  border: none;
+  border-radius: 10px;
+  box-shadow: 0px 0px 2px 2px rgb(51, 3, 226) #fff;
+  padding: 15px;
+  min-height: 30px;
+  min-width: 120px;
   text-decoration: none;
-  color: #777;
+  letter-spacing: 1px;
 }
 .top_nav_despre a:hover {
-  background-color: rgba(255, 255, 255, 0.297);
-  color: rgb(14, 43, 39);
+  background-color: #000000a8;
+  transition: 0.7s;
   cursor: pointer;
-  will-change: transform;
 }
+
+.top_nav_despre a:focus {
+  outline-color: transparent;
+  outline-style: solid;
+  box-shadow: 0 0 0 4px #fafafa;
+  transition: 0.7s;
+}
+
+.top_nav_despre a:active {
+  background-color: #01000c;
+}
+
 .background_color_none {
   background-color: unset;
 }
@@ -114,6 +233,8 @@ div.container div {
   margin-left: 50px;
   margin-top: 0;
   margin-bottom: 0;
+  color: rgb(250, 124, 20);
+  font-size: 1.2em;
 }
 
 .profile {
@@ -314,10 +435,11 @@ form .form_user_details .input-box {
 
 /*-----------------------------------------CSS--------------------------------------*/
 
+/*W3School Slide in (top) Image Hover Overlay effect*/
+
 .body_css {
   margin: 25px 25px 0 25px;
 }
-/*W3School Slide in (top) Image Hover Overlay effect*/
 
 .img-container-css {
   position: relative;
@@ -329,10 +451,7 @@ form .form_user_details .input-box {
   width: 100%;
   height: auto;
 }
-.nav_elements {
-  display: flex;
-  align-items: center;
-}
+
 .overlay_image_css {
   position: absolute;
   bottom: 100%;
@@ -394,6 +513,79 @@ form .form_user_details .input-box {
 
 .table_selectori_css tr:nth-child(even) {
   background-color: #71b7e653;
+}
+
+/*-------------INDEX-----------------------------------------------------------------------------------------------------*/
+
+.top_nav_index {
+  display: flex;
+  justify-content: right;
+  flex-direction: row;
+  gap: 30px;
+  margin: 0;
+  padding: 0;
+}
+
+.top_nav_index a {
+  color: rgb(250, 124, 20);
+  font-weight: bold;
+  font-size: 1.2em;
+  border: none;
+  border-radius: 10px;
+  box-shadow: 0px 0px 2px 2px rgb(51, 3, 226) #fff;
+  padding: 15px;
+  min-height: 30px;
+  min-width: 120px;
+  text-decoration: none;
+  letter-spacing: 1px;
+}
+
+.top_nav_index a:hover {
+  background-color: #012894a8;
+  transition: 0.7s;
+  cursor: pointer;
+}
+
+.top_nav_index a:focus {
+  outline-color: transparent;
+  outline-style: solid;
+  box-shadow: 0 0 0 4px #fafafa;
+  transition: 0.7s;
+}
+
+.top_nav_index a:active {
+  background-color: #01000c;
+}
+
+.img_color_table {
+  background-color: none;
+}
+
+.hex_formula {
+  display: flex;
+  justify-content: center;
+  font-weight: 1000;
+  font-size: x-large;
+  line-height: 1.6;
+}
+
+.hex_formula_red {
+  color: red;
+  padding-left: 10px;
+  text-decoration: underline;
+  text-decoration-color: red;
+}
+.hex_formula_green {
+  color: green;
+  padding-left: 10px;
+  text-decoration: underline;
+  text-decoration-color: green;
+}
+.hex_formula_blue {
+  color: blue;
+  padding-left: 10px;
+  text-decoration: underline;
+  text-decoration-color: blue;
 }
 
 /* -------------------------------------------------------Home DEV Tools --------------------------------------------------*/
@@ -492,3 +684,5 @@ form .form_user_details .input-box {
 .gitgub_nav_images {
   margin-bottom: 40px;
 }
+
+/* background-color: rgba(255, 170, 102, 0.25); */
