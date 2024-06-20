@@ -733,10 +733,19 @@ form .form_user_details .input-box {
 }
 
 /* -------------------------------------------------------Home DEV Tools --------------------------------------------------*/
+/* .tools_fixed_nav_bar_test {
+  position: fixed;
+  width: 100%;
+  max-width: 750px;
+  z-index: 5;
+} */
+
 .tools_nav_container {
-  padding: 20px;
+  padding: 10px;
   background: linear-gradient(100deg, #008cba, #ccc);
   display: flex;
+  width: 100%;
+  margin: 0;
 }
 
 .tools_nav_images img {
@@ -753,13 +762,9 @@ form .form_user_details .input-box {
 .tools_nav_list li {
   display: inline-flex;
   justify-content: space-between;
-  font-size: 25px;
+  font-size: 24px;
   font-weight: 500;
-  gap: 100px;
-}
-
-.tools_nav_list li a:hover {
-  color: #0c8eca;
+  gap: 20px;
 }
 
 .tools_nav_list li:hover {
@@ -768,7 +773,30 @@ form .form_user_details .input-box {
 
 .tools_nav_list li a {
   text-decoration: none;
+  font-weight: bold;
+  border: none;
+  padding: 10px;
+  line-height: 24px;
+  text-decoration: none;
+  font-size: 16px;
 }
+
+.tools_nav_list li a:hover {
+  background-color: #012894a8;
+  transition: 0.7s;
+  cursor: pointer;
+  border-radius: 10px;
+  color: white;
+  margin: 0 auto;
+}
+
+.tools_nav_list li a:focus {
+  outline-color: transparent;
+  outline-style: solid;
+  box-shadow: 0 0 0 4px #fafafa;
+  transition: 0.7s;
+}
+
 .tools_content {
   margin-left: 40px;
   margin-right: 40px;
@@ -777,9 +805,7 @@ form .form_user_details .input-box {
 .tools_content p {
   line-height: 25px;
 }
-.tools_content h1 {
-  font-weight: 550;
-}
+
 .tools_content ol li a {
   text-decoration: none;
   color: #ca780c;
@@ -820,7 +846,7 @@ form .form_user_details .input-box {
 }
 
 .git_nav_list li a:hover {
-  color: #e9090953;
+  color: white;
 }
 
 /* ----------------------------------------GitHUb----------------------------- */

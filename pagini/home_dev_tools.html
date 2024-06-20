@@ -7,129 +7,149 @@
     <title>Home</title>
   </head>
   <body>
-    <div class="tools_nav_container">
-      <div class="tools_nav_images">
-        <img src="/images/GitBash.png" alt="GitBash Logo" />
+    <main>
+      <div class="container text-align_left">
+        <div class="tools_nav_container tools_fixed_nav_bar_test">
+          <div class="tools_nav_images">
+            <img src="/images/GitBash.png" alt="GitBash Logo" />
+          </div>
+          <ul class="tools_nav_list">
+            <li><a href="./git.html">Git</a></li>
+            <li><a href="./github.html">GitHub</a></li>
+            <li><a href="./terminal.html">Terminal</a></li>
+            <li><a href="./bash.html">Bash</a></li>
+            <li><a href="../despre.html">Other Projects</a></li>
+            <li><a href="./inregistrare.html">Autentificare</a></li>
+          </ul>
+        </div>
+        <div class="tools_content">
+          <section class="tools_content_text"></section>
+          <!-- https://www.atlassian.com/git/tutorials/source-code-management -->
+          <h2>Gestionarea codului sursa</h2>
+          <p>
+            Managementul codului sursă (SCM) este utilizat pentru a urmări
+            modificările aduse unui depozit de cod sursă. SCM urmărește
+            istoricul de funcționare al modificărilor la o bază de cod și ajută
+            la rezolvarea conflictelor la îmbinarea actualizărilor de la mai
+            mulți contribuitori. SCM este, de asemenea, sinonim cu Controlul
+            versiunilor.
+          </p>
+          <p>
+            Pe măsură ce proiectele software cresc în linii de cod și numărul de
+            colaboratori, costurile generale de comunicare și complexitatea
+            managementului cresc, de asemenea. SCM este un instrument critic
+            pentru a atenua tensiunea organizațională a costurilor de dezvoltare
+            în creștere.
+          </p>
+          <br />
+          <hr />
+          <br />
+          <h2>
+            Importanța instrumentelor de management al codului sursă(SCM -
+            Source Code Management)
+          </h2>
+          <p>
+            Atunci când mai mulți dezvoltatori lucrează într-o bază de cod
+            partajată, este o întâmplare obișnuită să efectueze modificări la o
+            bucată de cod partajată. Dezvoltatorii separati pot lucra la o
+            caracteristică aparent izolată, însă această caracteristică poate
+            folosi un modul de cod partajat. Prin urmare, dezvoltatorul 1 care
+            lucrează la Caracteristica 1 ar putea face câteva modificări și
+            poate afla mai târziu că Dezvoltatorul 2 care lucrează la
+            Caracteristica 2 are editări contradictorii.
+          </p>
+          <p>
+            Acest mecanism fundamental de prevenire a conflictelor are ca efect
+            secundar furnizarea de comunicare pasivă pentru echipa de
+            dezvoltare. Apoi, echipa poate monitoriza și discuta lucrările în
+            desfășurare pe care CSM le monitorizează. SCM urmărește un întreg
+            istoric al modificărilor la baza de cod. Acest lucru permite
+            dezvoltatorilor să examineze și să revizuiască editările care ar
+            putea fi introdus erori sau regresii.
+          </p>
+          <h2>Beneficiile managementului codului sursă</h2>
+          <p>
+            În plus față de controlul versiunilor, SCM oferă o suită de alte
+            caracteristici utile pentru a face dezvoltarea codului colaborativ o
+            experiență mai ușor de utilizat. Odată ce SCM a început să
+            urmărească toate modificările unui proiect de-a lungul timpului,
+            este creată o înregistrare istorică detaliată a duratei de viață a
+            proiectelor. Această înregistrare istorică poate fi apoi utilizată
+            pentru a „anula” modificările aduse bazei de cod. SCM poate reveni
+            instantaneu la baza de cod înapoi la un moment anterior în timp.
+            Acest lucru este extrem de valoros pentru a preveni regresiile la
+            actualizări și pentru a anula greșelile.
+          </p>
+          <p>
+            Arhiva SCM a fiecărei modificări de-a lungul duratei de viață a unui
+            proiect oferă o evidență valoroasă pentru notele versiunii de
+            lansare a unui proiect. Un jurnal de istoric SCM curat și întreținut
+            poate fi folosit interschimbabil ca note de lansare. Acest lucru
+            oferă o perspectivă și transparență asupra progresului unui proiect
+            care poate fi partajat cu utilizatorii finali sau cu echipele care
+            nu sunt de dezvoltare.
+          </p>
+          <h2>Instrumente și software de gestionare a codului sursă</h2>
+          <p>
+            Pe lângă forma sa care poate fi citită de om, codul sursă poate fi
+            procesat și de mașini, făcând posibil ca diverse instrumente și
+            aplicații să analizeze și să manipuleze codul. Aceste instrumente
+            pot ajuta dezvoltatorii să detecteze erori sau ineficiențe în cod,
+            să automatizeze testarea și să optimizeze fluxul de lucru de
+            dezvoltare. Există diverse software și instrumente disponibile
+            pentru gestionarea codului sursă. Iată câteva opțiuni populare:
+          </p>
+          <ol>
+            <li>
+              <a href="git.html">Git:</a><br />
+              <p>
+                Git este un sistem distribuit de control al versiunilor care
+                urmărește modificările codului sursă în timpul dezvoltării
+                software.
+              </p>
+            </li>
+            <li>
+              <a href="github.html">GitHub:</a>
+              <br />
+              <p>
+                GitHub este o platformă bazată pe cloud unde puteți stoca,
+                partaja și lucra împreună cu alții pentru a scrie cod.
+              </p>
+            </li>
+            <li>
+              <a href="bash.html">Bash:</a><br />
+              <p>
+                Bash este atât un interpretor de comenzi, cât și un limbaj de
+                scripting care oferă un mediu interactiv în care puteți să
+                executați comenzi și să gestionați fișiere și procese pe
+                sistemele de operare Unix și Unix-like, inclusiv Linux.
+              </p>
+            </li>
+            <li>
+              <a href="terminal.html">Terminal:</a>
+              <br />
+              <p>
+                Terminal este un program care oferă o interfață grafică între
+                shell și utilizator. Primește de la shell, de exemplu,
+                caracterele „comandă nu a fost găsită” și își dă seama cum să vi
+                le afișeze.
+              </p>
+            </li>
+          </ol>
+        </div>
       </div>
-      <ul class="tools_nav_list">
-        <li><a href="./git.html">Git</a></li>
-        <li><a href="./github.html">GitHub</a></li>
-        <li><a href="./terminal.html">Terminal</a></li>
-        <li><a href="./bash.html">Bash</a></li>
-        <li><a href="./despre.html">About Projects</a></li>
-      </ul>
-    </div>
-    <div class="tools_content">
-      <section class="tools_content_text"></section>
-      <!-- https://www.atlassian.com/git/tutorials/source-code-management -->
-      <h1>Gestionarea codului sursa</h1>
-      <p>
-        Managementul codului sursă (SCM) este utilizat pentru a urmări
-        modificările aduse unui depozit de cod sursă. SCM urmărește istoricul de
-        funcționare al modificărilor la o bază de cod și ajută la rezolvarea
-        conflictelor la îmbinarea actualizărilor de la mai mulți contribuitori.
-        SCM este, de asemenea, sinonim cu Controlul versiunilor.
-      </p>
-      <p>
-        Pe măsură ce proiectele software cresc în linii de cod și numărul de
-        colaboratori, costurile generale de comunicare și complexitatea
-        managementului cresc, de asemenea. SCM este un instrument critic pentru
-        a atenua tensiunea organizațională a costurilor de dezvoltare în
-        creștere.
-      </p>
-      <br />
-      <hr />
-      <br />
-      <h1>
-        Importanța instrumentelor de management al codului sursă(SCM - Source
-        Code Management)
-      </h1>
-      <p>
-        Atunci când mai mulți dezvoltatori lucrează într-o bază de cod
-        partajată, este o întâmplare obișnuită să efectueze modificări la o
-        bucată de cod partajată. Dezvoltatorii separati pot lucra la o
-        caracteristică aparent izolată, însă această caracteristică poate folosi
-        un modul de cod partajat. Prin urmare, dezvoltatorul 1 care lucrează la
-        Caracteristica 1 ar putea face câteva modificări și poate afla mai
-        târziu că Dezvoltatorul 2 care lucrează la Caracteristica 2 are editări
-        contradictorii.
-      </p>
-      <p>
-        Acest mecanism fundamental de prevenire a conflictelor are ca efect
-        secundar furnizarea de comunicare pasivă pentru echipa de dezvoltare.
-        Apoi, echipa poate monitoriza și discuta lucrările în desfășurare pe
-        care CSM le monitorizează. SCM urmărește un întreg istoric al
-        modificărilor la baza de cod. Acest lucru permite dezvoltatorilor să
-        examineze și să revizuiască editările care ar putea fi introdus erori
-        sau regresii.
-      </p>
-      <h1>Beneficiile managementului codului sursă</h1>
-      <p>
-        În plus față de controlul versiunilor, SCM oferă o suită de alte
-        caracteristici utile pentru a face dezvoltarea codului colaborativ o
-        experiență mai ușor de utilizat. Odată ce SCM a început să urmărească
-        toate modificările unui proiect de-a lungul timpului, este creată o
-        înregistrare istorică detaliată a duratei de viață a proiectelor.
-        Această înregistrare istorică poate fi apoi utilizată pentru a „anula”
-        modificările aduse bazei de cod. SCM poate reveni instantaneu la baza de
-        cod înapoi la un moment anterior în timp. Acest lucru este extrem de
-        valoros pentru a preveni regresiile la actualizări și pentru a anula
-        greșelile.
-      </p>
-      <p>
-        Arhiva SCM a fiecărei modificări de-a lungul duratei de viață a unui
-        proiect oferă o evidență valoroasă pentru notele versiunii de lansare a
-        unui proiect. Un jurnal de istoric SCM curat și întreținut poate fi
-        folosit interschimbabil ca note de lansare. Acest lucru oferă o
-        perspectivă și transparență asupra progresului unui proiect care poate
-        fi partajat cu utilizatorii finali sau cu echipele care nu sunt de
-        dezvoltare.
-      </p>
-      <h1>Instrumente și software de gestionare a codului sursă</h1>
-      <p>
-        Pe lângă forma sa care poate fi citită de om, codul sursă poate fi
-        procesat și de mașini, făcând posibil ca diverse instrumente și
-        aplicații să analizeze și să manipuleze codul. Aceste instrumente pot
-        ajuta dezvoltatorii să detecteze erori sau ineficiențe în cod, să
-        automatizeze testarea și să optimizeze fluxul de lucru de dezvoltare.
-        Există diverse software și instrumente disponibile pentru gestionarea
-        codului sursă. Iată câteva opțiuni populare:
-      </p>
-      <ol>
-        <li>
-          <a href="git.html">Git:</a><br />
-          <p>
-            Git este un sistem distribuit de control al versiunilor care
-            urmărește modificările codului sursă în timpul dezvoltării software.
-          </p>
-        </li>
-        <li>
-          <a href="github.html">GitHub:</a>
-          <br />
-          <p>
-            GitHub este o platformă bazată pe cloud unde puteți stoca, partaja
-            și lucra împreună cu alții pentru a scrie cod.
-          </p>
-        </li>
-        <li>
-          <a href="bash.html">Bash:</a><br />
-          <p>
-            Bash este atât un interpretor de comenzi, cât și un limbaj de
-            scripting care oferă un mediu interactiv în care puteți să executați
-            comenzi și să gestionați fișiere și procese pe sistemele de operare
-            Unix și Unix-like, inclusiv Linux.
-          </p>
-        </li>
-        <li>
-          <a href="terminal.html">Terminal:</a>
-          <br />
-          <p>
-            Terminal este un program care oferă o interfață grafică între shell
-            și utilizator. Primește de la shell, de exemplu, caracterele
-            „comandă nu a fost găsită” și își dă seama cum să vi le afișeze.
-          </p>
-        </li>
-      </ol>
-    </div>
+    </main>
+    <br />
+    <footer class="main_footer">
+      <div>
+        <ul>
+          <li>Home</li>
+          <li>About Me</li>
+          <li>Projects</li>
+          <li>Inregistrare</li>
+          <li>Contact</li>
+        </ul>
+      </div>
+    </footer>
   </body>
 </html>
