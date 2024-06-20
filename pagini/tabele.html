@@ -13,165 +13,302 @@
     />
   </head>
   <body>
-    <div class="top_nav">
-      <p><a href="./despre.html">Acasa</a></p>
-      <p><a href="./index.html">Index</a></p>
-      <p><a href="./wikipedia.html">Wikipedia</a></p>
-      <p><a href="./multimedia.html">Multimedia</a></p>
-      <p><a href="./CSS.html">CSS</a></p>
-      <p><a href="./inregistrare.html">Formulare</a></p>
-    </div>
-    <h1>Tabele</h1>
-    <p>Exemplu tabel (Escape sequences, Wikipedia):</p>
-    <table border="1" style="border-collapse: collapse">
-      <tbody>
-        <thead>
-          <tr>
-            <th>Named</th>
-            <th>Decimal</th>
-            <th>Hexadecimal</th>
-            <th>Result</th>
-            <th>Description</th>
-            <th>Notes</th>
-          </tr>
-        </thead>
-        <tr>
-          <td>&amp;amp;</td>
-          <td>&#38;#38;</td>
-          <td>&#x26;#x26;</td>
-          <td>&amp;</td>
-          <td>
-            <a href="https://en.wikipedia.org/wiki/Ampersand">Ampersand</a>
-          </td>
-          <td></td>
-        </tr>
-        <tr>
-          <td>&amp;lt;</td>
-          <td>&amp;#60;</td>
-          <td>&amp;#x3C;</td>
-          <td>&lt;</td>
-          <td>
-            <a href="https://en.wikipedia.org/wiki/Less-than_sign">Less Than</a>
-          </td>
-          <td></td>
-        </tr>
-        <tr>
-          <td>&amp;gt;</td>
-          <td>&amp;#62;</td>
-          <td>&amp;#x3e;</td>
-          <td>&gt;</td>
-          <td>
-            <a href="https://en.wikipedia.org/wiki/Greater-than_sign"
-              >Greater Than</a
-            >
-          </td>
-          <td></td>
-        </tr>
-        <tr>
-          <td>&amp;quot;</td>
-          <td>&amp;#34;</td>
-          <td>&amp;#x22;</td>
-          <td>&quot;</td>
-          <td>
-            <a href="https://en.wikipedia.org/wiki/Double_quote"
-              >Double Quote</a
-            >
-          </td>
-          <td></td>
-        </tr>
-        <tr>
-          <td>&amp;apos;</td>
-          <td>&amp;#39;</td>
-          <td>&amp;#x27;</td>
-          <td>&apos;</td>
-          <td>
-            <a href="https://en.wikipedia.org/wiki/Single_quot">Single Quote</a>
-          </td>
-          <td></td>
-        </tr>
-        <tr>
-          <td>&amp;nbsp;</td>
-          <td>&amp;#160;</td>
-          <td>&amp;#xA0;</td>
-          <td>&nbsp;</td>
-          <td>
-            <a href="https://en.wikipedia.org/wiki/Non-breaking_space"
-              >Non-Breaking Space</a
-            >
-          </td>
-          <td></td>
-        </tr>
-        <tr>
-          <td>&amp;copy;</td>
-          <td>&amp;#169;</td>
-          <td>&amp;#xA9;</td>
-          <td>&copy;</td>
-          <td>
-            <a href="https://en.wikipedia.org/wiki/Copyright_symbol"
-              >Copyright</a
-            >
-          </td>
-          <td></td>
-        </tr>
-        <tr>
-          <td>&amp;reg;</td>
-          <td>&amp;#174;</td>
-          <td>&amp;#xAE;</td>
-          <td>&reg;</td>
-          <td>
-            <a href="https://en.wikipedia.org/wiki/Registered_trademark_symbol"
-              >Registered Trademark</a
-            >
-          </td>
-          <td></td>
-        </tr>
-        <tr>
-          <td>&amp;dagger;</td>
-          <td>&amp;#8224;</td>
-          <td>&amp;#x2020;</td>
-          <td>&dagger;</td>
-          <td>
-            <a href="https://en.wikipedia.org/wiki/Dagger_(mark)">Dagger</a>
-          </td>
-          <td></td>
-        </tr>
-        <tr>
-          <td>&amp;Dagger;</td>
-          <td>&amp;#8225;</td>
-          <td>&amp;#x2021;</td>
-          <td>&Dagger;</td>
-          <td>
-            <a href="https://en.wikipedia.org/wiki/Dagger_(mark)"
-              >Double dagger</a
-            >
-          </td>
-          <td>Names are case sensitive</td>
-        </tr>
-        <tr>
-          <td>&amp;ddagger;</td>
-          <td>&amp;#8225;</td>
-          <td>&amp;#x2021;</td>
-          <td>&ddagger;</td>
-          <td>
-            <a href="https://en.wikipedia.org/wiki/Dagger_(mark)"
-              >Double dagger</a
-            >
-          </td>
-          <td>Names may have synonyms</td>
-        </tr>
-        <tr>
-          <td>&amp;trade;</td>
-          <td>&amp;#8482;</td>
-          <td>&amp;#x2122;</td>
-          <td>&trade;</td>
-          <td>
-            <a href="https://en.wikipedia.org/wiki/Trademark_symbol"
-              >Trademark</a
-            >
-          </td>
-          <td></td>
-        </tr>
-      </tbody>
-    </table>
+    <main>
+      <div class="container">
+        <div class="header fixed_nav_bar">
+          <div class="top_nav_index text_dec_none">
+            <p><a href="../despre.html">Acasa</a></p>
+            <p><a href="../index.html">Index</a></p>
+            <p><a href="./wikipedia.html">Wikipedia</a></p>
+            <p><a href="./multimedia.html">Multimedia</a></p>
+            <p><a href="./css.html">CSS</a></p>
+            <p><a href="./inregistrare.html">Autentificare</a></p>
+          </div>
+          <br />
+          <h1 class="main_title">Prima pagina HTML</h1>
+        </div>
+        <br />
+        <br />
+        <h1 class="margin_top_40px">Tabele</h1>
+
+        <section>
+          <p>Exemplu tabel (Escape sequences, Wikipedia):</p>
+          <div class="container_table_selectori_css">
+            <table class="table_selectori_css">
+              <tbody>
+                <thead>
+                  <tr>
+                    <th>Named</th>
+                    <th>Decimal</th>
+                    <th>Hexadecimal</th>
+                    <th>Result</th>
+                    <th>Description</th>
+                    <th>Notes</th>
+                  </tr>
+                </thead>
+                <tr>
+                  <td>&amp;amp;</td>
+                  <td>&#38;#38;</td>
+                  <td>&#x26;#x26;</td>
+                  <td>&amp;</td>
+                  <td>
+                    <a href="https://en.wikipedia.org/wiki/Ampersand"
+                      >Ampersand</a
+                    >
+                  </td>
+                  <td></td>
+                </tr>
+                <tr>
+                  <td>&amp;lt;</td>
+                  <td>&amp;#60;</td>
+                  <td>&amp;#x3C;</td>
+                  <td>&lt;</td>
+                  <td>
+                    <a href="https://en.wikipedia.org/wiki/Less-than_sign"
+                      >Less Than</a
+                    >
+                  </td>
+                  <td></td>
+                </tr>
+                <tr>
+                  <td>&amp;gt;</td>
+                  <td>&amp;#62;</td>
+                  <td>&amp;#x3e;</td>
+                  <td>&gt;</td>
+                  <td>
+                    <a href="https://en.wikipedia.org/wiki/Greater-than_sign"
+                      >Greater Than</a
+                    >
+                  </td>
+                  <td></td>
+                </tr>
+                <tr>
+                  <td>&amp;quot;</td>
+                  <td>&amp;#34;</td>
+                  <td>&amp;#x22;</td>
+                  <td>&quot;</td>
+                  <td>
+                    <a href="https://en.wikipedia.org/wiki/Double_quote"
+                      >Double Quote</a
+                    >
+                  </td>
+                  <td></td>
+                </tr>
+                <tr>
+                  <td>&amp;apos;</td>
+                  <td>&amp;#39;</td>
+                  <td>&amp;#x27;</td>
+                  <td>&apos;</td>
+                  <td>
+                    <a href="https://en.wikipedia.org/wiki/Single_quot"
+                      >Single Quote</a
+                    >
+                  </td>
+                  <td></td>
+                </tr>
+                <tr>
+                  <td>&amp;nbsp;</td>
+                  <td>&amp;#160;</td>
+                  <td>&amp;#xA0;</td>
+                  <td>&nbsp;</td>
+                  <td>
+                    <a href="https://en.wikipedia.org/wiki/Non-breaking_space"
+                      >Non-Breaking Space</a
+                    >
+                  </td>
+                  <td></td>
+                </tr>
+                <tr>
+                  <td>&amp;copy;</td>
+                  <td>&amp;#169;</td>
+                  <td>&amp;#xA9;</td>
+                  <td>&copy;</td>
+                  <td>
+                    <a href="https://en.wikipedia.org/wiki/Copyright_symbol"
+                      >Copyright</a
+                    >
+                  </td>
+                  <td></td>
+                </tr>
+                <tr>
+                  <td>&amp;reg;</td>
+                  <td>&amp;#174;</td>
+                  <td>&amp;#xAE;</td>
+                  <td>&reg;</td>
+                  <td>
+                    <a
+                      href="https://en.wikipedia.org/wiki/Registered_trademark_symbol"
+                      >Registered Trademark</a
+                    >
+                  </td>
+                  <td></td>
+                </tr>
+                <tr>
+                  <td>&amp;dagger;</td>
+                  <td>&amp;#8224;</td>
+                  <td>&amp;#x2020;</td>
+                  <td>&dagger;</td>
+                  <td>
+                    <a href="https://en.wikipedia.org/wiki/Dagger_(mark)"
+                      >Dagger</a
+                    >
+                  </td>
+                  <td></td>
+                </tr>
+                <tr>
+                  <td>&amp;Dagger;</td>
+                  <td>&amp;#8225;</td>
+                  <td>&amp;#x2021;</td>
+                  <td>&Dagger;</td>
+                  <td>
+                    <a href="https://en.wikipedia.org/wiki/Dagger_(mark)"
+                      >Double dagger</a
+                    >
+                  </td>
+                  <td>Names are case sensitive</td>
+                </tr>
+                <tr>
+                  <td>&amp;ddagger;</td>
+                  <td>&amp;#8225;</td>
+                  <td>&amp;#x2021;</td>
+                  <td>&ddagger;</td>
+                  <td>
+                    <a href="https://en.wikipedia.org/wiki/Dagger_(mark)"
+                      >Double dagger</a
+                    >
+                  </td>
+                  <td>Names may have synonyms</td>
+                </tr>
+                <tr>
+                  <td>&amp;trade;</td>
+                  <td>&amp;#8482;</td>
+                  <td>&amp;#x2122;</td>
+                  <td>&trade;</td>
+                  <td>
+                    <a href="https://en.wikipedia.org/wiki/Trademark_symbol"
+                      >Trademark</a
+                    >
+                  </td>
+                  <td></td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </section>
+
+        <section class="">
+          <div class="div_left background_color_none">
+            <h2>Ce este un tabel?</h2>
+            <p>
+              Tabelele permit afișarea informațiilor într-o formă organizată pe
+              rânduri și coloane. Elementul &lt;table> este unul dintre
+              elementele HTML cu complexitate ridicată.
+            </p>
+            <p>Orice tabel este compus din</p>
+            <ul class="text_align_left">
+              <li>
+                un element
+                <span class="textbox_code"> &lt;table>. . .&lt;/table></span> –
+                acesta conține toate celelalte elemente care definesc tabelul;
+              </li>
+              <li>
+                rânduri, definit prin elementul
+                <span class="textbox_code">&lt;tr></span> – table row;
+              </li>
+              <li>
+                celule, definite prin elementul
+                <span class="textbox_code">&lt;td></span> – table data, o celulă
+                oarecare a tabelului sau
+                <span class="textbox_code">&lt;th></span> – care definește o
+                celulă care este antet (header) pentru un grup de celule.
+              </li>
+            </ul>
+            <p>
+              Fiecare celulă de tabel este definită de a &lt;td>și de o
+              &lt;/td>etichetă.
+            </p>
+          </div>
+
+          <div class="div_right exemplu_right">
+            <h3>Exemplu</h3>
+            <p>
+              În exemplul următor se afișează un tabel cu parametri impliciți.
+            </p>
+            <p class="exemplu_codebox">
+              <span class="exemplu_codebox_body">&nbsp;&nbsp;&nbsp;&lt;p></span>
+              Un paragraf inaintea tabelului
+              <span class="exemplu_codebox_body">&lt;p></span><br />
+              <span class="exemplu_codebox_body"
+                >&nbsp;&nbsp;&nbsp;&lt;table></span
+              ><br />
+              &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span
+                class="exemplu_codebox_body"
+                >&nbsp;&nbsp;&nbsp;&lt;tr></span
+              ><br />
+              &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp; &nbsp; &nbsp;&nbsp;<span
+                class="exemplu_codebox_body"
+                >&nbsp;&nbsp;&nbsp;&lt;th></span
+              >Nume<span class="exemplu_codebox_body">&lt;/th></span>
+              <br />
+              &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp; &nbsp; &nbsp;&nbsp;<span
+                class="exemplu_codebox_body"
+                >&nbsp;&nbsp;&nbsp;&lt;th></span
+              >Prenume<span class="exemplu_codebox_body">&lt;/th></span>
+              <br />
+              &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp; &nbsp; &nbsp;&nbsp;<span
+                class="exemplu_codebox_body"
+                >&nbsp;&nbsp;&nbsp;&lt;th></span
+              >Nota<span class="exemplu_codebox_body">&lt;/th></span>
+              <br />
+              &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span
+                class="exemplu_codebox_body"
+                >&nbsp;&nbsp;&nbsp;&lt;/tr></span
+              ><br />
+              &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span
+                class="exemplu_codebox_body"
+                >&nbsp;&nbsp;&nbsp;&lt;tr></span
+              ><br />
+              &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp; &nbsp; &nbsp;&nbsp;<span
+                class="exemplu_codebox_body"
+                >&nbsp;&nbsp;&nbsp;&lt;td></span
+              >Popescu<span class="exemplu_codebox_body">&lt;/td></span>
+              <br />
+              &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp; &nbsp; &nbsp;&nbsp;<span
+                class="exemplu_codebox_body"
+                >&nbsp;&nbsp;&nbsp;&lt;td></span
+              >Ionel<span class="exemplu_codebox_body">&lt;/td></span>
+              <br />
+              &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp; &nbsp; &nbsp;&nbsp;<span
+                class="exemplu_codebox_body"
+                >&nbsp;&nbsp;&nbsp;&lt;td></span
+              >7<span class="exemplu_codebox_body">&lt;/td></span>
+              <br />
+              &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span
+                class="exemplu_codebox_body"
+                >&nbsp;&nbsp;&nbsp;&lt;/tr></span
+              ><br />
+              <span class="exemplu_codebox_body"
+                >&nbsp;&nbsp;&nbsp;&lt;/table></span
+              ><br />
+              <span class="exemplu_codebox_body">&nbsp;&nbsp;&nbsp;&lt;p></span>
+              Un paragraf dupa tabel.
+              <span class="exemplu_codebox_body">&lt;p></span><br />
+            </p>
+          </div>
+        </section>
+      </div>
+    </main>
+    <hr />
+    <footer class="main_footer">
+      <div>
+        <ul>
+          <li>Home</li>
+          <li>About Me</li>
+          <li>Projects</li>
+          <li>Inregistrare</li>
+          <li>Contact</li>
+        </ul>
+      </div>
+    </footer>
   </body>
 </html>
