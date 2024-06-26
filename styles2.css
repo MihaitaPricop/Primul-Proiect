@@ -148,12 +148,16 @@ nav .submenu a {
   padding: var(--spacing-tiny) var(--spacing-small);
 }
 
+.about-us:hover .submenu {
+  display: block;
+}
+
 main {
   flex-grow: 1;
 }
 
 .welcome {
-  height: 100vh;
+  height: 50vh;
   width: 100%;
   background-color: var(--bg-primary);
   display: flex;
