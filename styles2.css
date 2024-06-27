@@ -649,6 +649,97 @@ footer p {
   padding: var(--spacing-small);
   width: 100px;
 }
+
+/*----------Javascript page-------------*/
+.a_noblock {
+  display: contents;
+}
+
+.flex_space_between {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.image-wrapper .filter_none {
+  filter: none;
+}
+
+.img_position_center {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.consola_exemplu_head {
+  background-color: rgb(41, 51, 77);
+  border-radius: 1em 1em 0px 0px;
+  color: rgb(255, 255, 255);
+  display: flex;
+  padding: 0.75em 1.5em;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 16px;
+  position: relative;
+  min-height: 3em;
+}
+
+.consola_exemplu_textbox {
+  margin: 0px 0px 1em;
+}
+.contact div pre {
+  margin: 0;
+}
+.contact div .pre_text {
+  background: rgb(17, 25, 46);
+  color: rgb(247, 248, 251);
+  border-radius: 0px 0px 1em 1em;
+  box-shadow: rgba(17, 25, 46, 0.1) 0px 0px 0px 0.125em inset;
+  display: block;
+  overflow: auto;
+  padding: 1.5em;
+  white-space: normal;
+  overflow-wrap: normal;
+  font-size: 0.875em;
+}
+
+.contact div .pre_text code {
+  white-space: normal;
+}
+
+.contact div .pre_text code ol {
+  list-style: none;
+  margin: 0px;
+  padding: 0px;
+  text-decoration: none;
+}
+
+.contact div .pre_text code ol li {
+  margin: 0px;
+  padding: 0px 3em;
+  display: flex;
+  justify-content: flex-start;
+  border-bottom: none;
+  letter-spacing: 2px;
+  font-size: 1em;
+  color: rgb(247, 248, 251);
+}
+
+.contact div .pre_text code ol li .token_string {
+  color: rgb(177, 228, 144);
+}
+
+.contact .container div .response {
+  border-radius: 1em;
+}
+
+.flex_dir_col {
+  flex-direction: column;
+}
+
+/* .side_by_side .side_by_side-wrapper {
+  width: 40%;
+  padding: 0 var(--spacing-small);
+} */
+
 /*------media ---------------*/
 
 @media (max-width: 992px) {
