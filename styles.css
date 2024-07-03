@@ -49,6 +49,7 @@ body {
   height: 70px;
   margin: 0;
   padding: 0;
+  border-top: 1px solid grey;
 }
 .main_footer ul {
   list-style-type: none;
@@ -312,6 +313,17 @@ p {
 
 .top_nav_despre a:active {
   background-color: #01000c;
+}
+.display_none {
+  display: none;
+}
+
+.menu_button {
+  display: none;
+  font-size: 1.5rem;
+  background: none;
+  border: none;
+  cursor: pointer;
 }
 
 .background_color_none {
@@ -901,11 +913,14 @@ form .form_user_details .input-box {
 
 /*------------------media screen-------------*/
 
-@media (min-width: 414px) and (max-width: 414px) {
+@media (max-width: 414px) {
   .top_nav_index {
     display: none;
   }
 
+  .main_footer {
+    display: none;
+  }
   .header {
     padding: 12px;
   }
@@ -947,6 +962,33 @@ form .form_user_details .input-box {
   }
 }
 
+.top_nav_despre {
+  flex-direction: column;
+}
+
+.nav_elements p {
+  margin: 0.5rem 0;
+}
+
+.profile_section {
+  padding: 1rem;
+}
+
+.profile_picture {
+  width: 100px;
+  height: 100px;
+}
+
+.btn {
+  width: 100%;
+  margin: 0.5rem 0;
+}
+
+.icon {
+  width: 24px;
+  height: 24px;
+}
+
 @media (max-width: 767px) {
   .header {
     padding: 10px;
@@ -978,6 +1020,46 @@ form .form_user_details .input-box {
   .img_size img {
     max-width: 100%;
     height: auto;
+  }
+
+  .nav_elements {
+    display: none;
+    flex-direction: column;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    background-color: #f8f9fa;
+    padding: 1rem 0;
+  }
+
+  .nav_elements.show {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .nav_elements p {
+    margin: 0.5rem 0;
+  }
+
+  .menu_button {
+    display: flex;
+    background-color: #db55079a;
+    width: 7rem;
+    border-radius: 2px;
+  }
+  .profile_section {
+    margin: 0;
+  }
+  .profile {
+    flex-direction: column;
+  }
+  .profile_picture_container {
+    margin: 0;
+  }
+  .profile_picture {
+    width: auto;
+    height: 50vw;
   }
 }
 
