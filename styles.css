@@ -94,7 +94,7 @@ div.container {
   width: 100%;
   max-width: 800px;
   overflow: auto;
-  margin: 0 auto;
+  margin: 0;
 }
 div.container div {
   float: left;
@@ -272,36 +272,30 @@ p {
 
 .top_nav_despre {
   display: flex;
-  justify-content: end;
   flex-direction: row;
-  font-weight: bold;
-  font-size: large;
-  color: #777;
   margin: 0;
   padding: 0;
 }
 
 .top_nav_despre div p {
-  display: inline-block;
-  margin: 29.88px;
+  display: flex;
+  justify-content: center;
 }
 .top_nav_despre p a {
   color: rgb(250, 124, 20);
   font-weight: bold;
-  font-size: 16px;
+  font-size: 20px;
   border: none;
   border-radius: 10px;
-  box-shadow: 0px 0px 2px 2px rgb(51, 3, 226) #fff;
-  padding: 5px;
-  min-height: 30px;
-  min-width: 120px;
+  padding: 10px;
   text-decoration: none;
   letter-spacing: 1px;
 }
 .top_nav_despre a:hover {
-  background-color: #000000a8;
+  background-color: #f8f8f8a8;
   transition: 0.7s;
   cursor: pointer;
+  color: #01000c;
 }
 
 .top_nav_despre a:focus {
@@ -325,7 +319,14 @@ p {
   border: none;
   cursor: pointer;
 }
-
+.nav_elements {
+  display: flex;
+  justify-content: center;
+  padding: 10px;
+  align-items: center;
+  background-color: #01000cc1;
+  gap: 20px;
+}
 .background_color_none {
   background-color: unset;
 }
@@ -417,12 +418,6 @@ p {
 .icon {
   cursor: pointer;
   height: 2rem;
-}
-
-@media screen and (max-width: 1125px) {
-  .nav_elements {
-    display: none;
-  }
 }
 
 /* -------------------------------------------------Formulare------------------------------------------- */
@@ -866,17 +861,6 @@ form .form_user_details .input-box {
 
 /* background-color: rgba(255, 170, 102, 0.25); */
 
-@media screen and (max-width: 800px) {
-  .profile_picture {
-    opacity: 0.3;
-  }
-
-  .top_nav_despre p a {
-    font-size: 13px;
-    padding: 5px;
-  }
-}
-
 /*------------Multimedia--------------------------------------*/
 /* .image_multimedia_container {
   display: flex;
@@ -952,6 +936,10 @@ form .form_user_details .input-box {
     text-align: left;
     float: none;
   }
+  .padding_15px {
+    padding: 15px;
+  }
+
   .footer {
     padding: 15px;
     font-size: 1rem;
@@ -960,36 +948,45 @@ form .form_user_details .input-box {
     max-width: 100%;
     height: auto;
   }
+
+  .top_nav_despre {
+    flex-direction: column;
+  }
+
+  .nav_elements p {
+    margin: 0.5rem 0;
+  }
+
+  .profile_section {
+    padding: 1rem;
+  }
+
+  .btn {
+    width: 100%;
+    margin: 0.5rem 0;
+  }
+
+  .icon {
+    width: 24px;
+    height: 24px;
+  }
+  .container_table_selectori_css table {
+    width: 100%;
+    font-size: 0.8rem;
+  }
+  .main-content {
+    margin: 0 15px;
+  }
+  .table_media_screen {
+    max-width: fit-content;
+    margin: 0 15px;
+  }
+  div.container {
+    margin: 0 15px;
+  }
 }
 
-.top_nav_despre {
-  flex-direction: column;
-}
-
-.nav_elements p {
-  margin: 0.5rem 0;
-}
-
-.profile_section {
-  padding: 1rem;
-}
-
-.profile_picture {
-  width: 100px;
-  height: 100px;
-}
-
-.btn {
-  width: 100%;
-  margin: 0.5rem 0;
-}
-
-.icon {
-  width: 24px;
-  height: 24px;
-}
-
-@media (max-width: 767px) {
+@media (min-width: 415px) and (max-width: 767px) {
   .header {
     padding: 10px;
   }
@@ -997,9 +994,12 @@ form .form_user_details .input-box {
   .main_title {
     font-size: 1.8rem;
   }
+  .main_footer {
+    display: none;
+  }
 
   .top_nav_index p {
-    display: block;
+    display: none;
     margin: 10px 0;
   }
 
@@ -1010,6 +1010,92 @@ form .form_user_details .input-box {
   .section_container {
     flex-direction: column;
 
+    align-items: center;
+  }
+
+  .div_left,
+  .div_right {
+    width: 100%;
+  }
+  .img_size img {
+    max-width: 100%;
+    height: auto;
+  }
+  .container_table_selectori_css table {
+    width: 100%;
+    font-size: 0.9rem;
+  }
+  .padding_15px {
+    padding: 15px;
+  }
+  .nav_elements {
+    display: none;
+    flex-direction: column;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    background-color: #f8f9fa;
+    padding: 1rem 0;
+  }
+
+  .nav_elements.show {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .nav_elements p {
+    margin: 0.5rem 0;
+  }
+
+  .menu_button {
+    display: flex;
+    background-color: #db55079a;
+    width: 7rem;
+    border-radius: 2px;
+  }
+  .profile_section {
+    margin: 0;
+  }
+  .profile {
+    flex-direction: column;
+  }
+  .profile_picture_container {
+    margin: 0;
+  }
+  .profile_picture {
+    width: auto;
+    height: 50vw;
+  }
+  .main-content {
+    margin: 0 15px;
+  }
+  .page-container {
+    margin: 0 15px;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 1024px) {
+  .header {
+    padding: 0;
+    margin: 0;
+  }
+
+  .main_title {
+    font-size: 2rem;
+  }
+
+  .top_nav_index p {
+    display: inline-block;
+    margin: 0 10px;
+  }
+
+  .index_body {
+    padding: 20px;
+  }
+
+  .section_container {
+    flex-direction: column;
     align-items: center;
   }
 
@@ -1061,37 +1147,8 @@ form .form_user_details .input-box {
     width: auto;
     height: 50vw;
   }
-}
-
-@media (min-width: 768px) and (max-width: 1024px) {
-  .header {
-    padding: 15px;
-  }
-
-  .main_title {
-    font-size: 2rem;
-  }
-
-  .top_nav_index p {
-    display: inline-block;
-    margin: 0 10px;
-  }
-
-  .index_body {
-    padding: 20px;
-  }
-
-  .section_container {
-    flex-direction: column;
-    align-items: center;
-  }
-
-  .div_left,
-  .div_right {
-    width: 100%;
-  }
-  .img_size img {
-    max-width: 100%;
-    height: auto;
-  }
+  /* .profile_picture {
+  width: 100px;
+  height: 100px;
+} */
 }
