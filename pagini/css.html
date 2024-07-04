@@ -13,348 +13,354 @@
     <title>CSS</title>
   </head>
   <body>
-    <header class="main_header">
-      <nav class="nav_logo_txt_split background_color_none">
-        <div class="nav_elements">
-          <a href="https://www.w3schools.com/css/"
-            ><img src="../images/css_logo.png" alt="CSS Logo" class="css_logo"
-          /></a>
+    <div class="container">
+      <header class="main_header">
+        <nav class="nav_logo_txt_split background_color_none">
+          <div class="top_nav_index background_color_none">
+            <p><a href="../despre.html">Acasa</a></p>
+            <p><a href="../index.html">Index</a></p>
+            <p><a href="./tabele.html">Tabele</a></p>
+            <p><a href="./wikipedia.html">Wikipedia</a></p>
+            <p><a href="./css.html">CSS</a></p>
+            <p><a href="./inregistrare.html">Autentificare</a></p>
+          </div>
+        </nav>
+      </header>
+      <div class="img-container-css">
+        <img
+          src="../images/css.png"
+          alt="CSS-Web Technologies"
+          class="image_css"
+        />
+        <div class="overlay_image_css">
+          <div class="overlay_image_css_text">
+            Cascading Style Sheets ( CSS )
+          </div>
         </div>
-        <div class="top_nav_index background_color_none">
-          <p><a href="../despre.html">Acasa</a></p>
-          <p><a href="../index.html">Index</a></p>
-          <p><a href="./tabele.html">Tabele</a></p>
-          <p><a href="./wikipedia.html">Wikipedia</a></p>
-          <p><a href="./css.html">CSS</a></p>
-          <p><a href="./inregistrare.html">Autentificare</a></p>
-        </div>
-      </nav>
-    </header>
-    <div class="img-container-css">
-      <img
-        src="../images/css.png"
-        alt="CSS-Web Technologies"
-        class="image_css"
-      />
-      <div class="overlay_image_css">
-        <div class="overlay_image_css_text">Cascading Style Sheets ( CSS )</div>
       </div>
+      <main class="body_css">
+        <div class="container_main_section">
+          <section class="css_definitie">
+            <div class="css_definitie_text">
+              <h1 class="font_size_25px">Ce este CSS?</h1>
+              <p>
+                <strong>CSS</strong> este prescurtarea de la
+                <strong>C</strong>ascading <strong>S</strong>tyle
+                <strong>S</strong>heets (sau „foi de stil in cascada”). Este
+                limbajul de stiluri (sau limbaj de stilizare) pentru definirea
+                modului de afisare a elementelor HTML, inclusiv culorile,
+                aspectul si fonturile, facand astfel paginile noastre web
+                prezentabile utilizatorilor.
+              </p>
+              <p>
+                Altfel spus, CSS se ocupa de stilizare, de felul in care sunt
+                redate elementele HTML intr-o pagina, fiind un mecanism simplu
+                de adaugare a elementelor de stil unui document web. Toate
+                browserele suporta in prezent CSS.
+              </p>
+              <p>
+                Utilizand CSS, dezvoltatorii web au posibilitatea de a stoca
+                separat stilurile, inlaturand formatarile din documentul HTML si
+                stocandu-le intr-un fisier CSS separat. Astfel, acestia pot
+                schimba usor aspectul paginilor web ale unui site, modificand un
+                singur fisier.
+              </p>
+              <p>Exemplele de cod CSS includ:</p>
+              <ul>
+                <li>formatarea usoara a paragrafului</li>
+                <li>modificarea literelor majuscule</li>
+                <li>modificarea culorilor legaturilor</li>
+                <li>eliminarea sublinierii link-urilor</li>
+                <li>crearea unui buton de legatura</li>
+                <li>crearea unei casete de text</li>
+                <li>alinierea centrala a elementelor</li>
+                <li>ajustarea marginilor</li>
+              </ul>
+            </div>
+          </section>
+          <section class="css_ierarhie">
+            <div>
+              <h1 class="font_size_25px">Unde se definesc stilurile CSS?</h1>
+              <p>Stilurile folosite pentru o pagina pot fi definite:</p>
+              <ul>
+                <li>in partea de Head a unui document HTML</li>
+                <li>intr-un fisier CSS extern</li>
+                <li>
+                  se poate aplica un stil diferit in partea de Body a unui
+                  fisier HTML, la fiecare tag HTML in parte (CSS inline)
+                </li>
+              </ul>
+              <p>
+                CSS-ul ofera libertatea de a suprascrie un stil deja definit,
+                lucrand cu o anumita ierarhie, astfel:
+              </p>
+              <ul>
+                <li>setarile implicite ale browserului</li>
+                <li>apoi foi de stiluri externe (din fisiere CSS)</li>
+                <li>foi de stiluri interne (din sectiunea HEAD)</li>
+                <li>stiluri inline (din tagul elementului HTML)</li>
+              </ul>
+            </div>
+          </section>
+          <section class="css_tipuri">
+            <div class="css_tipuri_text">
+              <h1 class="font_size_25px">Inline CSS</h1>
+              <div>
+                <ul>
+                  <li>
+                    Inainte de CSS, acesta era singurul mod de a aplica stiluri
+                  </li>
+                  <li>
+                    Nu este un mod eficient de a scrie, deoarece are multa
+                    redundanta
+                  </li>
+                  <li>Autonom</li>
+                  <li>Aplicat in mod unic pe fiecare element</li>
+                </ul>
+              </div>
+              <div>
+                <h1 class="font_size_25px">Internal CSS</h1>
+                <ul>
+                  <li>
+                    Cu ajutorul etichetei de stil, putem aplica stiluri in
+                    fisierul HTML
+                  </li>
+                  <li>Redundanta este eliminata</li>
+                  <li>Aplicat in mod unic pe un singur document</li>
+                </ul>
+              </div>
+              <div>
+                <h1 class="font_size_25px">External CSS</h1>
+                <ul>
+                  <li>
+                    Cu ajutorul tag-ului &lt;link> in tag-ul de la inceputul
+                    paginii, putem aplica stiluri
+                  </li>
+                  <li>Se adauga referinta</li>
+                  <li>Fisier salvat cu extensia .css</li>
+                  <li>Redundanta este eliminata</li>
+                  <li>Aplicat in mod unic fiecarui document</li>
+                </ul>
+              </div>
+            </div>
+            <div class="css_tipuri_exemplu">
+              <img
+                src="../images/stiluri_css.jpg"
+                alt="Stiluri CSS"
+                class="img_css_tipuri_exemplu"
+              />
+            </div>
+          </section>
+          <br />
+          <br />
+          <h1 class="font_size_25px">Selectorii CSS</h1>
+          <section class="container_table_selectori_css">
+            <table class="table_selectori_css">
+              <tbody>
+                <tr>
+                  <th>Selector</th>
+                  <th>Exemplu</th>
+                  <th>Descriere</th>
+                </tr>
+                <tr>
+                  <td class="font_italic">.class</td>
+                  <td>.intro</td>
+                  <td>Selecteaza toate elementele marcate cu class="intro"</td>
+                </tr>
+                <tr>
+                  <td class="font_italic">.class1.class2</td>
+                  <td>.name1.name2</td>
+                  <td>
+                    Selecteaza toate elementele ce contin ambele clase in campul
+                    de atribute.
+                  </td>
+                </tr>
+                <tr>
+                  <td class="font_italic">.class1 .class2</td>
+                  <td>.name1 .name2</td>
+                  <td>
+                    Selecteaza toate elementele ce contin <em>name2</em> ca si
+                    descendent dupa <em>name1</em>.
+                  </td>
+                </tr>
+                <tr>
+                  <td class="font_italic">#id</td>
+                  <td>#firstname</td>
+                  <td>Selecteaza elemetul cu id="firstname"</td>
+                </tr>
+                <tr>
+                  <td class="font_italic">*</td>
+                  <td>*</td>
+                  <td>Selecteaza toate elementele</td>
+                </tr>
+                <tr>
+                  <td class="font_italic">element</td>
+                  <td>p</td>
+                  <td>Selecteaza toate elementele &lt;p></td>
+                </tr>
+                <tr>
+                  <td class="font_italic">element.class</td>
+                  <td>p.intro</td>
+                  <td>Selecteaza toate elementele &lt;p> cu class="intro"</td>
+                </tr>
+                <tr>
+                  <td class="font_italic">element,element</td>
+                  <td>div, p</td>
+                  <td>Selecteaza toate elementele &lt;div> si &lt;p></td>
+                </tr>
+                <tr>
+                  <td class="font_italic">element element</td>
+                  <td>div p</td>
+                  <td>
+                    Selecteaza toate elementele &lt;p> din elementele &lt;div>
+                  </td>
+                </tr>
+                <tr>
+                  <td class="font_italic">::after</td>
+                  <td>p::after</td>
+                  <td>
+                    Introduce ceva dupa continutul fiecarui element &lt;p>
+                  </td>
+                </tr>
+                <tr>
+                  <td class="font_italic">::before</td>
+                  <td>p::before</td>
+                  <td>
+                    Introduce ceva inaintea continutului fiecarui element &lt;p>
+                  </td>
+                </tr>
+                <tr>
+                  <td class="font_italic">:hover</td>
+                  <td>a:hover</td>
+                  <td>
+                    Selecteaza link-urile cand cursorul este poszitionat
+                    deasupra
+                  </td>
+                </tr>
+                <tr>
+                  <td class="font_italic">:nth-type(n)</td>
+                  <td>p:nth-of-type(2)</td>
+                  <td>
+                    Selecteaza fiecare element &lt;p> care este al doilea &lt;p>
+                    element al parintelui
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+          </section>
+          <br />
+          <h1 class="font_size_25px">CSS Backgrounds</h1>
+          <section class="section_container">
+            <div class="div_left background_color_none width_auto">
+              <p>
+                Proprietățile de fundal CSS sunt folosite pentru a adăuga efecte
+                de fundal pentru elemente.
+              </p>
+              <p>Printre cele mai folosite proprietăți se enumeră:</p>
+              <ul>
+                <li>background-color</li>
+                <li>background-image</li>
+                <li>background-repeat</li>
+                <li>background-attachment</li>
+                <li>background-position</li>
+                <li>background (proprietate stenografie)</li>
+              </ul>
+              <p>
+                Imaginea de fundal poate fi setată și pentru anumite elemente,
+                cum ar fi elementul &lt;/p>:
+              </p>
+              <p>
+                Acest videoclip ne arată cum putem folosi proprietatea de
+                background:
+              </p>
+              <iframe
+                width="auto"
+                height="315"
+                src="https://www.youtube.com/embed/dr1y4m7iEoU?si=3xTJQgNrzvmWbreG"
+                title="YouTube video player"
+                frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                referrerpolicy="strict-origin-when-cross-origin"
+                allowfullscreen
+              ></iframe>
+            </div>
+            <div class="div_right exemplu_right padding_15px">
+              <h3>Exemplu</h3>
+              <p>Culoarea de fundal a unei pagini este setată astfel:</p>
+              <p class="exemplu_codebox">
+                <span class="exemplu_codebox_body">&nbsp;&nbsp;&nbsp;body</span>
+                {
+                <br />
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span
+                  class="color_red"
+                  >background-color:</span
+                >
+                <span class="color_blue">lightblue;</span> <br />
+                &nbsp;&nbsp;&nbsp;}
+              </p>
+              <p class="exemplu_codebox">
+                <span class="exemplu_codebox_body">&nbsp;&nbsp;&nbsp;p</span> {
+                <br />
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span
+                  class="color_red"
+                  >background-image:</span
+                >
+                <span class="color_blue">image.png</span> <br />
+                &nbsp;&nbsp;&nbsp;}
+              </p>
+              <p class="exemplu_codebox">
+                <span class="exemplu_codebox_body"
+                  >&nbsp;&nbsp;&nbsp;table</span
+                >
+                {
+                <br />
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span
+                  class="color_red"
+                  >background-repeat:</span
+                >
+                <span class="color_blue">norepeat;</span> <br />
+                &nbsp;&nbsp;&nbsp;}
+              </p>
+              <p class="exemplu_codebox">
+                <span class="exemplu_codebox_body">&nbsp;&nbsp;&nbsp;h1</span> {
+                <br />
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span
+                  class="color_red"
+                  >background-attachment:</span
+                >
+                <span class="color_blue">fixed;</span> <br />
+                &nbsp;&nbsp;&nbsp;}
+              </p>
+              <p class="exemplu_codebox">
+                <span class="exemplu_codebox_body">&nbsp;&nbsp;&nbsp;div</span>
+                {
+                <br />
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span
+                  class="color_red"
+                  >background-position:</span
+                >
+                <span class="color_blue">center;</span> <br />
+                &nbsp;&nbsp;&nbsp;}
+              </p>
+              <p class="exemplu_codebox">
+                <span class="exemplu_codebox_body"
+                  >&nbsp;&nbsp;&nbsp;section</span
+                >
+                {
+                <br />
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span
+                  class="color_red"
+                  >background:</span
+                >
+                <span class="color_blue">url ("paper.gif");</span>
+                <br />
+                &nbsp;&nbsp;&nbsp;}
+              </p>
+            </div>
+          </section>
+        </div>
+      </main>
     </div>
-    <main class="body_css">
-      <div class="container_main_section">
-        <section class="css_definitie">
-          <div class="css_definitie_text">
-            <h1 class="font_size_25px">Ce este CSS?</h1>
-            <p>
-              <strong>CSS</strong> este prescurtarea de la
-              <strong>C</strong>ascading <strong>S</strong>tyle
-              <strong>S</strong>heets (sau „foi de stil in cascada”). Este
-              limbajul de stiluri (sau limbaj de stilizare) pentru definirea
-              modului de afisare a elementelor HTML, inclusiv culorile, aspectul
-              si fonturile, facand astfel paginile noastre web prezentabile
-              utilizatorilor.
-            </p>
-            <p>
-              Altfel spus, CSS se ocupa de stilizare, de felul in care sunt
-              redate elementele HTML intr-o pagina, fiind un mecanism simplu de
-              adaugare a elementelor de stil unui document web. Toate browserele
-              suporta in prezent CSS.
-            </p>
-            <p>
-              Utilizand CSS, dezvoltatorii web au posibilitatea de a stoca
-              separat stilurile, inlaturand formatarile din documentul HTML si
-              stocandu-le intr-un fisier CSS separat. Astfel, acestia pot
-              schimba usor aspectul paginilor web ale unui site, modificand un
-              singur fisier.
-            </p>
-            <p>Exemplele de cod CSS includ:</p>
-            <ul>
-              <li>formatarea usoara a paragrafului</li>
-              <li>modificarea literelor majuscule</li>
-              <li>modificarea culorilor legaturilor</li>
-              <li>eliminarea sublinierii link-urilor</li>
-              <li>crearea unui buton de legatura</li>
-              <li>crearea unei casete de text</li>
-              <li>alinierea centrala a elementelor</li>
-              <li>ajustarea marginilor</li>
-            </ul>
-          </div>
-        </section>
-        <section class="css_ierarhie">
-          <div>
-            <h1 class="font_size_25px">Unde se definesc stilurile CSS?</h1>
-            <p>Stilurile folosite pentru o pagina pot fi definite:</p>
-            <ul>
-              <li>in partea de Head a unui document HTML</li>
-              <li>intr-un fisier CSS extern</li>
-              <li>
-                se poate aplica un stil diferit in partea de Body a unui fisier
-                HTML, la fiecare tag HTML in parte (CSS inline)
-              </li>
-            </ul>
-            <p>
-              CSS-ul ofera libertatea de a suprascrie un stil deja definit,
-              lucrand cu o anumita ierarhie, astfel:
-            </p>
-            <ul>
-              <li>setarile implicite ale browserului</li>
-              <li>apoi foi de stiluri externe (din fisiere CSS)</li>
-              <li>foi de stiluri interne (din sectiunea HEAD)</li>
-              <li>stiluri inline (din tagul elementului HTML)</li>
-            </ul>
-          </div>
-        </section>
-        <section class="css_tipuri">
-          <div class="css_tipuri_text">
-            <h1 class="font_size_25px">Inline CSS</h1>
-            <div>
-              <ul>
-                <li>
-                  Inainte de CSS, acesta era singurul mod de a aplica stiluri
-                </li>
-                <li>
-                  Nu este un mod eficient de a scrie, deoarece are multa
-                  redundanta
-                </li>
-                <li>Autonom</li>
-                <li>Aplicat in mod unic pe fiecare element</li>
-              </ul>
-            </div>
-            <div>
-              <h1 class="font_size_25px">Internal CSS</h1>
-              <ul>
-                <li>
-                  Cu ajutorul etichetei de stil, putem aplica stiluri in
-                  fisierul HTML
-                </li>
-                <li>Redundanta este eliminata</li>
-                <li>Aplicat in mod unic pe un singur document</li>
-              </ul>
-            </div>
-            <div>
-              <h1 class="font_size_25px">External CSS</h1>
-              <ul>
-                <li>
-                  Cu ajutorul tag-ului &lt;link> in tag-ul de la inceputul
-                  paginii, putem aplica stiluri
-                </li>
-                <li>Se adauga referinta</li>
-                <li>Fisier salvat cu extensia .css</li>
-                <li>Redundanta este eliminata</li>
-                <li>Aplicat in mod unic fiecarui document</li>
-              </ul>
-            </div>
-          </div>
-          <div class="css_tipuri_exemplu">
-            <img
-              src="../images/stiluri_css.jpg"
-              alt="Stiluri CSS"
-              class="img_css_tipuri_exemplu"
-            />
-          </div>
-        </section>
-        <br />
-        <br />
-        <h1 class="font_size_25px">Selectorii CSS</h1>
-        <section class="container_table_selectori_css">
-          <table class="table_selectori_css">
-            <tbody>
-              <tr>
-                <th>Selector</th>
-                <th>Exemplu</th>
-                <th>Descriere</th>
-              </tr>
-              <tr>
-                <td class="font_italic">.class</td>
-                <td>.intro</td>
-                <td>Selecteaza toate elementele marcate cu class="intro"</td>
-              </tr>
-              <tr>
-                <td class="font_italic">.class1.class2</td>
-                <td>.name1.name2</td>
-                <td>
-                  Selecteaza toate elementele ce contin ambele clase in campul
-                  de atribute.
-                </td>
-              </tr>
-              <tr>
-                <td class="font_italic">.class1 .class2</td>
-                <td>.name1 .name2</td>
-                <td>
-                  Selecteaza toate elementele ce contin <em>name2</em> ca si
-                  descendent dupa <em>name1</em>.
-                </td>
-              </tr>
-              <tr>
-                <td class="font_italic">#id</td>
-                <td>#firstname</td>
-                <td>Selecteaza elemetul cu id="firstname"</td>
-              </tr>
-              <tr>
-                <td class="font_italic">*</td>
-                <td>*</td>
-                <td>Selecteaza toate elementele</td>
-              </tr>
-              <tr>
-                <td class="font_italic">element</td>
-                <td>p</td>
-                <td>Selecteaza toate elementele &lt;p></td>
-              </tr>
-              <tr>
-                <td class="font_italic">element.class</td>
-                <td>p.intro</td>
-                <td>Selecteaza toate elementele &lt;p> cu class="intro"</td>
-              </tr>
-              <tr>
-                <td class="font_italic">element,element</td>
-                <td>div, p</td>
-                <td>Selecteaza toate elementele &lt;div> si &lt;p></td>
-              </tr>
-              <tr>
-                <td class="font_italic">element element</td>
-                <td>div p</td>
-                <td>
-                  Selecteaza toate elementele &lt;p> din elementele &lt;div>
-                </td>
-              </tr>
-              <tr>
-                <td class="font_italic">::after</td>
-                <td>p::after</td>
-                <td>Introduce ceva dupa continutul fiecarui element &lt;p></td>
-              </tr>
-              <tr>
-                <td class="font_italic">::before</td>
-                <td>p::before</td>
-                <td>
-                  Introduce ceva inaintea continutului fiecarui element &lt;p>
-                </td>
-              </tr>
-              <tr>
-                <td class="font_italic">:hover</td>
-                <td>a:hover</td>
-                <td>
-                  Selecteaza link-urile cand cursorul este poszitionat deasupra
-                </td>
-              </tr>
-              <tr>
-                <td class="font_italic">:nth-type(n)</td>
-                <td>p:nth-of-type(2)</td>
-                <td>
-                  Selecteaza fiecare element &lt;p> care este al doilea &lt;p>
-                  element al parintelui
-                </td>
-              </tr>
-            </tbody>
-          </table>
-        </section>
-        <br />
-        <h1 class="font_size_25px">CSS Backgrounds</h1>
-        <section class="section_container">
-          <div class="div_left background_color_none">
-            <p>
-              Proprietățile de fundal CSS sunt folosite pentru a adăuga efecte
-              de fundal pentru elemente.
-            </p>
-            <p>Printre cele mai folosite proprietăți se enumeră:</p>
-            <ul>
-              <li>background-color</li>
-              <li>background-image</li>
-              <li>background-repeat</li>
-              <li>background-attachment</li>
-              <li>background-position</li>
-              <li>background (proprietate stenografie)</li>
-            </ul>
-            <p>
-              Imaginea de fundal poate fi setată și pentru anumite elemente, cum
-              ar fi elementul &lt;/p>:
-            </p>
-            <p>
-              Acest videoclip ne arată cum putem folosi proprietatea de
-              background:
-            </p>
-            <iframe
-              width="560"
-              height="315"
-              src="https://www.youtube.com/embed/dr1y4m7iEoU?si=3xTJQgNrzvmWbreG"
-              title="YouTube video player"
-              frameborder="0"
-              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-              referrerpolicy="strict-origin-when-cross-origin"
-              allowfullscreen
-            ></iframe>
-          </div>
-          <div class="div_right exemplu_right">
-            <h3>Exemplu</h3>
-            <p>Culoarea de fundal a unei pagini este setată astfel:</p>
-            <p class="exemplu_codebox">
-              <span class="exemplu_codebox_body">&nbsp;&nbsp;&nbsp;body</span> {
-              <br />
-              &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span
-                class="color_red"
-                >background-color:</span
-              >
-              <span class="color_blue">lightblue;</span> <br />
-              &nbsp;&nbsp;&nbsp;}
-            </p>
-            <p class="exemplu_codebox">
-              <span class="exemplu_codebox_body">&nbsp;&nbsp;&nbsp;p</span> {
-              <br />
-              &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span
-                class="color_red"
-                >background-image:</span
-              >
-              <span class="color_blue">image.png</span> <br />
-              &nbsp;&nbsp;&nbsp;}
-            </p>
-            <p class="exemplu_codebox">
-              <span class="exemplu_codebox_body">&nbsp;&nbsp;&nbsp;table</span>
-              {
-              <br />
-              &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span
-                class="color_red"
-                >background-repeat:</span
-              >
-              <span class="color_blue">norepeat;</span> <br />
-              &nbsp;&nbsp;&nbsp;}
-            </p>
-            <p class="exemplu_codebox">
-              <span class="exemplu_codebox_body">&nbsp;&nbsp;&nbsp;h1</span> {
-              <br />
-              &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span
-                class="color_red"
-                >background-attachment:</span
-              >
-              <span class="color_blue">fixed;</span> <br />
-              &nbsp;&nbsp;&nbsp;}
-            </p>
-            <p class="exemplu_codebox">
-              <span class="exemplu_codebox_body">&nbsp;&nbsp;&nbsp;div</span> {
-              <br />
-              &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span
-                class="color_red"
-                >background-position:</span
-              >
-              <span class="color_blue">center;</span> <br />
-              &nbsp;&nbsp;&nbsp;}
-            </p>
-            <p class="exemplu_codebox">
-              <span class="exemplu_codebox_body"
-                >&nbsp;&nbsp;&nbsp;section</span
-              >
-              {
-              <br />
-              &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span
-                class="color_red"
-                >background:</span
-              >
-              <span class="color_blue">url ("paper.gif");</span>
-              <br />
-              &nbsp;&nbsp;&nbsp;}
-            </p>
-          </div>
-        </section>
-      </div>
-    </main>
   </body>
 </html>
 

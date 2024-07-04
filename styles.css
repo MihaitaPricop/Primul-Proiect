@@ -65,6 +65,7 @@ body {
   width: 100%;
   max-width: 750px;
   z-index: 5;
+  top: 0;
 }
 
 .top_nav {
@@ -94,7 +95,7 @@ div.container {
   width: 100%;
   max-width: 800px;
   overflow: auto;
-  margin: 0;
+  margin: 0 auto;
 }
 div.container div {
   float: left;
@@ -112,7 +113,8 @@ div.container div {
 
 .section_container {
   display: flex;
-  justify-content: flex-start;
+  justify-content: center;
+  flex-direction: column;
   margin: 0;
   padding: 0;
   flex-wrap: wrap;
@@ -235,6 +237,7 @@ p {
   background-color: #7777771f;
   position: relative;
   padding: 8px 12px 8px 12px;
+  width: 100%;
   /* text-align: center; */
 }
 
@@ -258,6 +261,14 @@ p {
 .color_blue {
   color: blue;
 }
+
+.width_auto {
+  width: auto;
+}
+
+.padding_top_20px_li li {
+  padding-top: 20px;
+}
 /* .indented-text {
   text-indent: 60px;} /* Indents the first line of text */
 
@@ -275,6 +286,10 @@ p {
   flex-direction: row;
   margin: 0;
   padding: 0;
+}
+
+.top_nav_despre {
+  display: block;
 }
 
 .top_nav_despre div p {
@@ -602,7 +617,7 @@ form .form_user_details .input-box {
 .overlay_image_css_text {
   white-space: nowrap;
   color: white;
-  font-size: 80px;
+  font-size: 2rem;
   position: absolute;
   overflow: hidden;
   top: 50%;
@@ -614,13 +629,6 @@ form .form_user_details .input-box {
 
 /*section*/
 
-.css_tipuri {
-  display: flex;
-}
-.css_tipuri_exemplu {
-  display: flex;
-  justify-content: center;
-}
 .img_css_tipuri_exemplu {
   width: 95%;
   margin: 0;
@@ -637,10 +645,6 @@ form .form_user_details .input-box {
 }
 .table_selectori_css {
   border: 1px solid #777;
-
-  /* display: flex;
-  justify-content: space-evenly;
-  align-items: center; */
 }
 
 .table_selectori_css tr:nth-child(even) {
@@ -745,7 +749,6 @@ form .form_user_details .input-box {
 } */
 
 .tools_nav_container {
-  padding: 10px;
   background: linear-gradient(100deg, #008cba, #ccc);
   display: flex;
   width: 100%;
@@ -802,8 +805,7 @@ form .form_user_details .input-box {
 }
 
 .tools_content {
-  margin-left: 40px;
-  margin-right: 40px;
+  margin: 0 40px;
   font-size: 18px;
 }
 .tools_content p {
@@ -819,20 +821,20 @@ form .form_user_details .input-box {
 /* --------------------------------Git--------------------- */
 
 .git_nav_images img {
-  height: 101px;
+  height: 100px;
   margin: 0;
   width: auto;
   position: absolute;
   top: 0;
-  left: 10px;
+  left: 0;
   border-radius: 30%;
+  margin: ;
 }
 
 .git_nav_container {
   padding: 20px;
   display: flex;
   background: linear-gradient(100deg, #db5507, #f7f7f5);
-  flex-wrap: wrap;
   justify-content: center;
   align-items: center;
 }
@@ -855,11 +857,56 @@ form .form_user_details .input-box {
 
 /* ----------------------------------------GitHUb----------------------------- */
 
-.gitgub_nav_images {
-  margin-bottom: 40px;
+.github_nav_images img {
+  width: 100px;
+  height: 60px;
+  margin: 10px;
 }
 
-/* background-color: rgba(255, 170, 102, 0.25); */
+.dev_tools_container {
+  width: 100%;
+  max-width: 1000px;
+  overflow: auto;
+  margin: 0 auto;
+}
+
+.bold_txt {
+  font-weight: bold;
+}
+
+/*---------------------------------Terminal------------*/
+
+.section_terminal li + li {
+  padding-top: 15px;
+}
+
+.display_contents {
+  display: contents;
+}
+
+.git_image {
+  max-width: -webkit-fill-available;
+  width: 90%;
+  margin: 10px 20px 10px 15px;
+}
+
+.codebox_gitbash {
+  height: 30px;
+  width: 50vw;
+  background-color: #01000ccc;
+  border: 3px solid rgba(179, 176, 176, 0.313);
+  border-radius: 8px;
+  line-height: 1.45;
+  font-size: 90%;
+  font-weight: bolder;
+  padding: 16px;
+}
+
+.text_codebox_gitbash {
+  color: rgb(245, 245, 245);
+
+  margin: auto 0;
+}
 
 /*------------Multimedia--------------------------------------*/
 /* .image_multimedia_container {
@@ -899,6 +946,9 @@ form .form_user_details .input-box {
 
 @media (max-width: 414px) {
   .top_nav_index {
+    display: none;
+  }
+  .top_nav_despre {
     display: none;
   }
 
@@ -949,6 +999,10 @@ form .form_user_details .input-box {
     height: auto;
   }
 
+  .img_color_table {
+    width: -webkit-fill-available;
+  }
+
   .top_nav_despre {
     flex-direction: column;
   }
@@ -959,6 +1013,21 @@ form .form_user_details .input-box {
 
   .profile_section {
     padding: 1rem;
+  }
+  .profile {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+
+  .profile_picture_container {
+    margin: 0;
+  }
+
+  .profile_picture {
+    width: 50vw;
+    height: 50vw;
   }
 
   .btn {
@@ -982,6 +1051,53 @@ form .form_user_details .input-box {
     margin: 0 15px;
   }
   div.container {
+    margin: 0;
+  }
+  .local_video_multimedia {
+    max-width: -webkit-fill-available;
+  }
+  .youtube_video_multimedia {
+    max-width: -webkit-fill-available;
+    height: auto;
+  }
+  .local_audio_multimedia {
+    margin: auto;
+  }
+
+  .form_user_details {
+    display: contents;
+  }
+  .form_container div .input-box {
+    width: 100%;
+  }
+
+  .body_formular {
+    padding: 10px;
+  }
+  .img-container-css {
+    top: -70px;
+  }
+  .width_100p {
+    width: 100%;
+  }
+  .width_fit {
+    width: fit-content;
+  }
+  .nav_display_none {
+    display: none;
+  }
+  .content_terminal {
+    padding: 0 15px;
+  }
+
+  .section_terminal img {
+    max-width: 100%;
+  }
+  .tools_nav_container ul {
+    display: none;
+  }
+
+  .git_content {
     margin: 0 15px;
   }
 }
@@ -1073,6 +1189,31 @@ form .form_user_details .input-box {
   .page-container {
     margin: 0 15px;
   }
+  .width_auto {
+    width: auto;
+  }
+  .body_formular {
+    padding: 10px;
+  }
+  .img-container-css {
+    top: -70px;
+  }
+  .nav_display_none {
+    display: none;
+  }
+  .content_terminal {
+    padding: 0 15px;
+  }
+
+  .section_terminal img {
+    max-width: 100%;
+  }
+  .tools_nav_container ul {
+    display: none;
+  }
+  .git_content {
+    margin: 0 15px;
+  }
 }
 
 @media (min-width: 768px) and (max-width: 1024px) {
@@ -1088,6 +1229,10 @@ form .form_user_details .input-box {
   .top_nav_index p {
     display: inline-block;
     margin: 0 10px;
+  }
+
+  .width_auto {
+    width: auto;
   }
 
   .index_body {
@@ -1147,6 +1292,21 @@ form .form_user_details .input-box {
     width: auto;
     height: 50vw;
   }
+  .nav_display_none {
+    display: none;
+  }
+
+  .content_terminal {
+    padding: 0 15px;
+  }
+
+  .section_terminal img {
+    max-width: 100%;
+  }
+  .git_content {
+    margin: 0 15px;
+  }
+
   /* .profile_picture {
   width: 100px;
   height: 100px;

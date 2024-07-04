@@ -7,96 +7,428 @@
     <title>GitHub</title>
   </head>
   <body>
-    <div class="git_nav_container github_nav_container">
-      <div class="tools_nav_images git_nav_images gitgub_nav_images">
-        <img
-          src="https://logos-world.net/wp-content/uploads/2020/11/GitHub-Logo.png"
-          alt="GitBash Logo"
-        />
+    <div class="dev_tools_container">
+      <div class="tools_nav_container">
+        <div class="github_nav_images">
+          <img
+            src="https://logos-world.net/wp-content/uploads/2020/11/GitHub-Logo.png"
+            alt="GitBash Logo"
+          />
+        </div>
+        <div class="nav_display_none display_contents">
+          <ul class="tools_nav_list">
+            <li><a href="./git.html">Git</a></li>
+            <li><a href="./terminal.html">Terminal</a></li>
+            <li><a href="./bash.html">Bash</a></li>
+            <li><a href="../despre.html">Other Projects</a></li>
+            <li><a href="./inregistrare.html">Autentificare</a></li>
+            <li><a href="./home_dev_tools.html">Home</a></li>
+          </ul>
+        </div>
       </div>
-      <div>
-        <ul class="tools_nav_list git_nav_list github_nav_list">
-          <li><a href="./git.html">Git</a></li>
-          <li><a href="./terminal.html">Terminal</a></li>
-          <li><a href="./bash.html">Bash</a></li>
-          <li><a href="../despre.html">Other Projects</a></li>
-          <li><a href="./inregistrare.html">Autentificare</a></li>
-          <li><a href="./home_dev_tools.html">Home</a></li>
-        </ul>
-      </div>
-    </div>
-    <div class="git_content">
-      <section>
-        <h1>Despre GitHub</h1>
-        <p>
-          GitHub este o platformă bazată pe cloud unde puteți stoca, partaja și
-          lucra împreună cu alții pentru a scrie cod. Stocarea codului într-un
-          „depozitar” pe GitHub vă permite să:
-        </p>
 
-        <ul>
-          <li>Prezentați sau distribuiți munca dvs.</li>
-          <li>
-            Urmăriți și gestionați modificările aduse codului dvs. de-a lungul
-            timpului.
-          </li>
-          <li>
-            Permiteți altora să vă revizuiască codul și să facă sugestii pentru
-            a-l îmbunătăți.
-          </li>
-          <li>
-            Colaborați la un proiect comun, fără să vă faceți griji că
-            modificările dvs. vor afecta munca colaboratorilor dvs. înainte de a
-            fi gata să-i integrați.
-          </li>
-        </ul>
-        <p>
-          Lucrarea în colaborare, una dintre caracteristicile fundamentale ale
-          GitHub, este posibilă de software-ul open-source, Git, pe care este
-          construit GitHub.
-        </p>
-      </section>
-      <section>
-        <h2>Cum funcționează Git și GitHub împreună?</h2>
-        <p>
-          Când încărcați fișiere în GitHub, le veți stoca într-un „depozitar
-          Git”. Aceasta înseamnă că atunci când faceți modificări (sau „commit”)
-          fișierelor dvs. din GitHub, Git va începe automat să urmărească și să
-          gestioneze modificările.
-        </p>
-        <p>
-          Există o mulțime de acțiuni legate de Git pe care le puteți finaliza
-          pe GitHub direct în browser, cum ar fi crearea unui depozit Git,
-          crearea de ramuri și încărcarea și editarea fișierelor.
-        </p>
-        <p>
-          Cu toate acestea, majoritatea oamenilor lucrează la fișierele lor
-          local (pe propriul computer), apoi sincronizează continuu aceste
-          modificări locale - și toate datele Git aferente - cu depozitul
-          central „la distanță” de pe GitHub. Există o mulțime de instrumente pe
-          care le puteți folosi pentru a face acest lucru, cum ar fi GitHub
-          Desktop.
-        </p>
-        <p>
-          Odată ce începeți să colaborați cu alții și toți trebuie să lucreze la
-          același depozit în același timp, veți continua:
-        </p>
-        <ul>
-          <li>
-            Extrageți toate cele mai recente modificări făcute de colaboratorii
-            dvs. din depozitul de la distanță de pe GitHub.
-          </li>
-          <li>
-            Împingeți propriile modificări în același depozit de la distanță de
-            pe GitHub.
-          </li>
-        </ul>
-        <p>
-          Git își dă seama cum să îmbine în mod inteligent acest flux de
-          modificări, iar GitHub vă ajută să gestionați fluxul prin funcții
-          precum „cereri de tragere”.
-        </p>
-      </section>
+      <main>
+        <div class="git_content">
+          <section>
+            <h1>Despre GitHub</h1>
+            <p>
+              GitHub este o platformă bazată pe cloud unde puteți stoca, partaja
+              și lucra împreună cu alții pentru a scrie cod. Stocarea codului
+              într-un „depozitar” pe GitHub vă permite să:
+            </p>
+
+            <ul class="padding_top_20px_li">
+              <li>Prezentați sau distribuiți munca dvs.</li>
+              <li>
+                Urmăriți și gestionați modificările aduse codului dvs. de-a
+                lungul timpului.
+              </li>
+              <li>
+                Permiteți altora să vă revizuiască codul și să facă sugestii
+                pentru a-l îmbunătăți.
+              </li>
+              <li>
+                Colaborați la un proiect comun, fără să vă faceți griji că
+                modificările dvs. vor afecta munca colaboratorilor dvs. înainte
+                de a fi gata să-i integrați.
+              </li>
+            </ul>
+            <p>
+              Lucrarea în colaborare, una dintre caracteristicile fundamentale
+              ale GitHub, este posibilă de software-ul open-source, Git, pe care
+              este construit GitHub.
+            </p>
+          </section>
+          <hr />
+          <section>
+            <h3>Cum funcționează Git și GitHub împreună?</h3>
+            <p>
+              Când încărcați fișiere în GitHub, le veți stoca într-un „depozitar
+              Git”. Aceasta înseamnă că atunci când faceți modificări (sau
+              „commit”) fișierelor dvs. din GitHub, Git va începe automat să
+              urmărească și să gestioneze modificările.
+            </p>
+            <p>
+              Există o mulțime de acțiuni legate de Git pe care le puteți
+              finaliza pe GitHub direct în browser, cum ar fi crearea unui
+              depozit Git, crearea de ramuri și încărcarea și editarea
+              fișierelor.
+            </p>
+            <p>
+              Cu toate acestea, majoritatea oamenilor lucrează la fișierele lor
+              local (pe propriul computer), apoi sincronizează continuu aceste
+              modificări locale - și toate datele Git aferente - cu depozitul
+              central „la distanță” de pe GitHub. Există o mulțime de
+              instrumente pe care le puteți folosi pentru a face acest lucru,
+              cum ar fi GitHub Desktop.
+            </p>
+            <p>
+              Odată ce începeți să colaborați cu alții și toți trebuie să
+              lucreze la același depozit în același timp, veți continua:
+            </p>
+            <ul class="padding_top_20px_li">
+              <li>
+                Extrageți toate cele mai recente modificări făcute de
+                colaboratorii dvs. din depozitul de la distanță de pe GitHub.
+              </li>
+              <li>
+                Împingeți propriile modificări în același depozit de la distanță
+                de pe GitHub.
+              </li>
+            </ul>
+            <p>
+              Git își dă seama cum să îmbine în mod inteligent acest flux de
+              modificări, iar GitHub vă ajută să gestionați fluxul prin funcții
+              precum „cereri de tragere”.
+            </p>
+          </section>
+          <hr />
+          <section>
+            <h1>Crearea unui cont pe GitHub</h1>
+            <h3>Despre contul dvs. personal pe GitHub.com</h3>
+            <p>
+              Pentru a începe să utilizați GitHub, va trebui să vă creați un
+              cont personal gratuit pe GitHub.com și să vă verificați adresa de
+              e-mail.
+            </p>
+            <p>
+              Fiecare persoană care utilizează GitHub.com se conectează la un
+              cont personal. Contul dvs. personal este identitatea dvs. pe
+              GitHub.com și are un nume de utilizator și un profil. De exemplu,
+              vezi
+              <a href="https://github.com/octocat"
+                ><u>profilul lui octocat </u></a
+              >.
+            </p>
+            <p>
+              Mai târziu, puteți explora diferitele tipuri de conturi pe care le
+              oferă GitHub și puteți decide dacă aveți nevoie de un plan de
+              facturare. Pentru mai multe informații, consultați „<a
+                href="https://docs.github.com/en/get-started/learning-about-github/types-of-github-accounts"
+              >
+                <u>Tipuri de conturi GitHub</u></a
+              >
+              ” și „<a
+                href="https://docs.github.com/en/get-started/learning-about-github/types-of-github-accounts"
+                ><u> Planurile GitHub</u></a
+              >
+              ”.
+            </p>
+            <hr />
+            <h3>Înregistrarea pentru un nou cont personal</h3>
+            <ol class="padding_top_20px_li">
+              <li>
+                Navigați la
+                <a href="https://github.com/"><u>https://github.com/</u></a> .
+              </li>
+              <li>
+                Faceți clic <span class="bold_txt">pe Înregistrare </span>.
+              </li>
+              <li>Urmați instrucțiunile pentru a vă crea contul personal.</li>
+            </ol>
+            <p>
+              În timpul înscrierii, vi se va cere să vă verificați adresa de
+              e-mail. Fără o adresă de e-mail verificată, nu veți putea finaliza
+              unele sarcini de bază GitHub, cum ar fi crearea unui depozit.
+            </p>
+            <p>
+              Dacă întâmpinați probleme la verificarea adresei de e-mail, există
+              câțiva pași de depanare pe care îi puteți lua. Pentru mai multe
+              informații, consultați „<a
+                href="https://docs.github.com/en/account-and-profile/setting-up-and-managing-your-personal-account-on-github/managing-email-preferences/verifying-your-email-address#troubleshooting-email-verification"
+                ><u> Verificarea adresei de e-mail </u></a
+              >”.
+            </p>
+          </section>
+          <hr />
+          <section>
+            <h1>Setarea adresei de e-mail de commit pe GitHub</h1>
+            <p>
+              Dacă nu ați activat confidențialitatea adresei de e-mail, puteți
+              alege cu ce adresă de e-mail verificată să creați modificări
+              atunci când editați, ștergeți sau creați fișiere sau îmbinați o
+              solicitare de extragere pe GitHub. Dacă ați activat
+              confidențialitatea adresei de e-mail, atunci adresa de e-mail a
+              autorului de comitere nu poate fi schimbată și va fi implicit fără
+              răspuns. Pentru mai multe informații despre forma exactă pe care o
+              poate lua adresa de e-mail fără răspuns, consultați „ Setarea
+              adresei de e-mail de confirmare ”.
+            </p>
+            <ol class="padding_top_20px_li">
+              <li>
+                În colțul din dreapta sus al oricărei pagini din GitHub, dați
+                clic pe fotografia de profil, apoi faceți clic pe
+                <i>Setări</i> .
+              </li>
+              <li>
+                În secțiunea „Acces” a barei laterale, dați clic pe
+                <i>E-mailuri </i>.
+              </li>
+              <li>
+                În „Adăugați adresa de e-mail”, introduceți adresa dvs. de
+                e-mail și faceți clic <i>pe Adăugați </i>.
+              </li>
+              <li>
+                <a
+                  href="https://docs.github.com/en/account-and-profile/setting-up-and-managing-your-personal-account-on-github/managing-email-preferences/verifying-your-email-address"
+                  >Verifică-ți adresa de email </a
+                >.
+              </li>
+              <li>
+                În meniul drop-down „Adresă de e-mail principală”, selectați
+                adresa de e-mail pe care doriți să o asociați cu operațiunile
+                dvs. Git bazate pe web.<br /><img
+                  src="../images/github_email_address.png"
+                  alt="Email address"
+                  class="git_image"
+                />
+              </li>
+              <li>
+                Pentru a vă păstra adresa de e-mail privată atunci când
+                efectuați operațiuni Git pe web, selectați Păstrați adresele
+                mele de e-mail private .
+              </li>
+            </ol>
+          </section>
+          <hr />
+          <section>
+            <h1>Setarea adresei de e-mail de comitere în Git</h1>
+            <p>
+              Puteți folosi <span class="textbox_code">git config</span> comanda
+              pentru a schimba adresa de e-mail pe care o asociați cu comiterile
+              Git. Noua adresă de e-mail pe care o setați va fi vizibilă în
+              orice comitere viitoare pe care le trimiteți către GitHub.com din
+              linia de comandă. Orice comitere pe care le-ați făcut înainte de a
+              vă schimba adresa de e-mail de comit sunt în continuare asociate
+              cu adresa dvs. de e-mail anterioară.
+            </p>
+            <h3>
+              Setarea adresei de e-mail pentru fiecare depozit de pe computer
+            </h3>
+            <ol class="padding_top_20px_li">
+              <li>Deschideți Git Bash .</li>
+              <li>
+                Setați o adresă de e-mail în Git. Puteți utiliza adresa de
+                e-mail furnizată de GitHubnoreply sau orice adresă de e-mail.<br /><br />
+                <div class="codebox_gitbash">
+                  <code
+                    class="text_codebox_gitbash"
+                    style="font-family: initial"
+                    >git config --global user.email "YOUR_EMAIL"</code
+                  ><br />
+                </div>
+              </li>
+              <li>
+                Confirmați că ați setat corect adresa de e-mail în Git:<br /><br />
+                <div class="codebox_gitbash">
+                  <code
+                    class="text_codebox_gitbash"
+                    style="font-family: initial"
+                    >$ git config --global user.email<br />
+                    email@example.com</code
+                  ><br />
+                </div>
+              </li>
+              <li>
+                Adăugați adresa de e-mail în contul dvs. de pe GitHub, astfel
+                încât angajamentele dvs. să vă fie atribuite și să apară în
+                graficul contribuțiilor dvs. Pentru mai multe informații,
+                consultați „ <br /><a
+                  href="https://docs.github.com/en/account-and-profile/setting-up-and-managing-your-personal-account-on-github/managing-email-preferences/adding-an-email-address-to-your-github-account"
+                >
+                  <u
+                    >Adăugarea unei adrese de e-mail la contul dumneavoastră
+                    GitHub</u
+                  > </a
+                >”.
+              </li>
+            </ol>
+          </section>
+          <hr />
+          <section>
+            <h1>Încărcarea unui proiect în GitHub</h1>
+            <p>Încărcarea fișierelor într-un depozit GitHub vă permite:</p>
+            <ul class="padding_top_20px_li">
+              <li>
+                Aplicați controlul versiunilor atunci când modificați fișierele,
+                astfel încât istoricul proiectului să fie protejat și
+                gestionabil.
+              </li>
+              <li>
+                Faceți backup pentru munca dvs., deoarece fișierele dvs. sunt
+                acum stocate în cloud.
+              </li>
+              <li>
+                Fixați depozitul la profilul dvs. personal, astfel încât
+                ceilalți să vă poată vedea munca.
+              </li>
+              <li>
+                Distribuiți și discutați despre munca dvs. cu alții, public sau
+                privat.
+              </li>
+            </ul>
+            <h3>Pasul 1: Creați un nou depozit pentru proiectul dvs</h3>
+            <p>
+              Este o idee bună să creați un nou depozit pentru fiecare proiect
+              individual la care lucrați. Dacă scrieți un proiect software,
+              gruparea tuturor fișierelor asociate într-un nou depozit
+              facilitează întreținerea și gestionarea bazei de cod în timp.
+            </p>
+            <ol class="padding_top_20px_li">
+              <li>
+                În colțul din dreapta sus al oricărei pagini, selectați +, apoi
+                faceți clic pe<span class="bold_txt"> Arhivă nou </span>.
+              </li>
+              <li>
+                În caseta „Nume depozit”, tastați un nume pentru proiectul dvs.
+                De exemplu, tastați „primul meu-proiect”.
+              </li>
+              <li>
+                În caseta „Descriere”, introduceți o scurtă descriere. De
+                exemplu, tastați „Acesta este primul meu proiect pe GitHub”.
+              </li>
+              <li>
+                Selectați dacă depozitul dvs. va fi
+                <span class="bold_txt">Public</span> sau
+                <span class="bold_txt">Privat</span> . Selectați „Public” dacă
+                doriți ca alții să vă poată vedea proiectul.
+              </li>
+              <li>
+                Selectați
+                <span class="bold_txt">Adăugați un fișier README</span> . Veți
+                edita acest fișier într-un pas ulterior.
+              </li>
+              <li>
+                Faceți clic pe <span class="bold_txt">Creare depozit </span>.
+              </li>
+            </ol>
+            <h3>Pasul 2: Încărcați fișiere în depozitul proiectului dvs</h3>
+            <p>
+              Până acum, ar trebui să vedeți doar un fișier listat în depozit,
+              fișierul pe care <span class="textbox_code">README.md</span> l-ați
+              creat când ați inițializat depozitul. Acum, vom încărca câteva
+              dintre propriile fișiere.
+            </p>
+            <ol class="padding_top_20px_li">
+              <li>
+                În partea dreaptă a paginii, selectați meniul drop-down
+                <span class="bold_txt">Adăugați fișier </span>.
+              </li>
+              <li>
+                Din meniul drop-down, faceți clic pe<span class="bold_txt">
+                  Încărcați fișiere</span
+                >
+                .
+              </li>
+              <li>
+                Pe computer, deschideți folderul care conține lucrarea dvs.,
+                apoi trageți și plasați toate fișierele și folderele în browser.
+              </li>
+              <li>
+                În partea de jos a paginii, sub „Angajați modificări”, selectați
+                „Angajați direct în
+                <span class="textbox_code">main</span> ramură, apoi faceți clic
+                pe<span class="bold_txt"> Commiteți modificări</span>
+                .
+              </li>
+            </ol>
+            <h3>Concluzie</h3>
+            <p>
+              Acum ați creat un nou depozit, ați încărcat câteva fișiere în el
+              și ați adăugat un proiect README.
+            </p>
+            <p>
+              Dacă setați vizibilitatea depozitului dvs. la „Public”, depozitul
+              va fi afișat în profilul dvs. personal și puteți partaja adresa
+              URL a depozitului dvs. altor persoane.
+            </p>
+            <p>
+              Pe măsură ce adăugați, editați sau ștergeți fișiere direct în
+              browser de pe GitHub, GitHub va urmări aceste modificări
+              ("commit-uri"), astfel încât să puteți începe să gestionați
+              istoricul și evoluția proiectului.
+            </p>
+            <p>
+              Când faceți modificări, rețineți că puteți crea o ramură nouă din
+              <span class="textbox_code">main</span> ramura depozitului dvs.,
+              astfel încât să puteți experimenta fără a afecta copia principală
+              a fișierelor. Apoi, când sunteți mulțumit de un set de modificări,
+              deschideți o cerere de extragere pentru a îmbina modificările în
+              <span class="textbox_code">main</span> ramura dvs.
+            </p>
+            <h3>Pasii urmatori</h3>
+            <p>
+              Majoritatea oamenilor doresc să continue să lucreze la fișierele
+              lor local (adică pe propriul computer) și apoi să sincronizeze
+              continuu aceste modificări făcute local cu acest depozit „la
+              distanță” (în cloud) de pe GitHub. Există o mulțime de instrumente
+              care vă permit să faceți acest lucru, cum ar fi GitHub Desktop.
+              Pentru a începe, ar trebui să:
+            </p>
+            <ul class="padding_top_20px_li">
+              <li>
+                Instalați GitHub Desktop. Pentru mai multe informații,
+                consultați „
+                <a
+                  href="https://docs.github.com/en/desktop/overview/getting-started-with-github-desktop"
+                  ><u>Noțiuni introductive despre GitHub Desktop </u></a
+                >”.
+              </li>
+              <li>
+                Clonați depozitul de la distanță, astfel încât să aveți o copie
+                a acestuia pe propriul computer. Pentru mai multe informații,
+                consultați „
+                <a
+                  href="https://docs.github.com/en/desktop/adding-and-cloning-repositories/cloning-and-forking-repositories-from-github-desktop"
+                  ><u
+                    >Clonarea și bifurcarea depozitelor din GitHub Desktop</u
+                  ></a
+                >
+                ”.
+              </li>
+              <li>
+                Sincronizați continuu modificările locale cu acest depozit de la
+                distanță. Pentru mai multe informații, consultați „
+                <a
+                  href="https://docs.github.com/en/desktop/working-with-your-remote-repository-on-github-or-github-enterprise/syncing-your-branch-in-github-desktop"
+                  ><u>Sincronizarea sucursalei dvs. în GitHub Desktop</u> </a
+                >”.
+              </li>
+            </ul>
+          </section>
+        </div>
+      </main>
+      <footer class="main_footer">
+        <div>
+          <ul>
+            <li><a href="./home_dev_tools.html">Home</a></li>
+            <li><a href="../despre.html">About Me</a></li>
+            <li><a href="../itschool.html">Projects</a></li>
+            <li><a href="./inregistrare.html">Inregistrare</a></li>
+            <li><a href="../despre.html">Contact</a></li>
+          </ul>
+        </div>
+      </footer>
     </div>
   </body>
 </html>

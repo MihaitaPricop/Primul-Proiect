@@ -4,99 +4,198 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="../styles.css" />
-    <title>GitHub</title>
+    <title>Terminal</title>
   </head>
   <body>
-    <div class="git_nav_container github_nav_container">
-      <div class="tools_nav_images git_nav_images gitgub_nav_images">
-        <img
-          src="https://logos-world.net/wp-content/uploads/2020/11/GitHub-Logo.png"
-          alt="GitBash Logo"
-        />
+    <div class="dev_tools_container">
+      <div class="tools_nav_container">
+        <div class="tools_nav_images">
+          <img src="../images/GitBash.png" alt="GitBash Logo" />
+        </div>
+        <div class="nav_display_none display_contents">
+          <ul class="tools_nav_list">
+            <li><a href="./git.html">Git</a></li>
+            <li><a href="./github.html">GitHub</a></li>
+            <li><a href="./bash.html">Bash</a></li>
+            <li><a href="../despre.html">Other Projects</a></li>
+            <li><a href="./inregistrare.html">Autentificare</a></li>
+            <li><a href="./home_dev_tools.html">Home</a></li>
+          </ul>
+        </div>
       </div>
-      <div>
-        <ul class="tools_nav_list git_nav_list github_nav_list">
-          <li><a href="./git.html">Git</a></li>
-          <li><a href="./github.html">GitHub</a></li>
-          <li><a href="./bash.html">Bash</a></li>
-          <li><a href="../despre.html">Other Projects</a></li>
-          <li><a href="./inregistrare.html">Autentificare</a></li>
-          <li><a href="./home_dev_tools.html">Home</a></li>
-        </ul>
-      </div>
-    </div>
-    <div class="git_content">
-      <section>
-        <h1>Despre GitHub</h1>
-        <p>
-          GitHub este o platformă bazată pe cloud unde puteți stoca, partaja și
-          lucra împreună cu alții pentru a scrie cod. Stocarea codului într-un
-          „depozitar” pe GitHub vă permite să:
-        </p>
+      <div class="content_terminal">
+        <section class="section_terminal">
+          <h1>Despre Terminal</h1>
+          <p>
+            În primele zile ale calculului, computerul care procesa date sau
+            efectua operațiuni era separat de instrumentul care îi dădea
+            instrucțiuni pentru a face procesarea. A fost:
+          </p>
 
-        <ul>
-          <li>Prezentați sau distribuiți munca dvs.</li>
-          <li>
-            Urmăriți și gestionați modificările aduse codului dvs. de-a lungul
-            timpului.
-          </li>
-          <li>
-            Permiteți altora să vă revizuiască codul și să facă sugestii pentru
-            a-l îmbunătăți.
-          </li>
-          <li>
-            Colaborați la un proiect comun, fără să vă faceți griji că
-            modificările dvs. vor afecta munca colaboratorilor dvs. înainte de a
-            fi gata să-i integrați.
-          </li>
-        </ul>
-        <p>
-          Lucrarea în colaborare, una dintre caracteristicile fundamentale ale
-          GitHub, este posibilă de software-ul open-source, Git, pe care este
-          construit GitHub.
-        </p>
-      </section>
-      <section>
-        <h2>Cum funcționează Git și GitHub împreună?</h2>
-        <p>
-          Când încărcați fișiere în GitHub, le veți stoca într-un „depozitar
-          Git”. Aceasta înseamnă că atunci când faceți modificări (sau „commit”)
-          fișierelor dvs. din GitHub, Git va începe automat să urmărească și să
-          gestioneze modificările.
-        </p>
-        <p>
-          Există o mulțime de acțiuni legate de Git pe care le puteți finaliza
-          pe GitHub direct în browser, cum ar fi crearea unui depozit Git,
-          crearea de ramuri și încărcarea și editarea fișierelor.
-        </p>
-        <p>
-          Cu toate acestea, majoritatea oamenilor lucrează la fișierele lor
-          local (pe propriul computer), apoi sincronizează continuu aceste
-          modificări locale - și toate datele Git aferente - cu depozitul
-          central „la distanță” de pe GitHub. Există o mulțime de instrumente pe
-          care le puteți folosi pentru a face acest lucru, cum ar fi GitHub
-          Desktop.
-        </p>
-        <p>
-          Odată ce începeți să colaborați cu alții și toți trebuie să lucreze la
-          același depozit în același timp, veți continua:
-        </p>
-        <ul>
-          <li>
-            Extrageți toate cele mai recente modificări făcute de colaboratorii
-            dvs. din depozitul de la distanță de pe GitHub.
-          </li>
-          <li>
-            Împingeți propriile modificări în același depozit de la distanță de
-            pe GitHub.
-          </li>
-        </ul>
-        <p>
-          Git își dă seama cum să îmbine în mod inteligent acest flux de
-          modificări, iar GitHub vă ajută să gestionați fluxul prin funcții
-          precum „cereri de tragere”.
-        </p>
-      </section>
+          <ul>
+            <li>
+              Terminalul: care a fost folosit pentru a trimite comenzi către
+              computer și
+            </li>
+            <li>Computerul: hardware-ul care a procesat comenzile</li>
+          </ul>
+          <p>
+            Astăzi, există computere care pot furniza atât comenzi, cât și
+            efectuarea calculelor, iar aceste computere au interfețe grafice cu
+            utilizatorul (cunoscute sub numele de GUI) care facilitează
+            efectuarea sarcinilor.
+          </p>
+          <p>
+            Cu toate acestea, accesarea liniei de comandă sau a terminalului
+            poate fi adesea mai eficientă decât utilizarea GUI-urilor pentru
+            anumite sarcini și puteți trimite comenzi prin intermediul
+            terminalului pentru a îndeplini în mod programatic aceste sarcini.
+            De exemplu, lucrul cu fișiere din terminal este mai rapid și mai
+            eficient decât lucrul cu fișiere într-un mediu grafic precum Windows
+            Explorer sau Finder pe un MAC.
+          </p>
+          <p>
+            De asemenea, puteți utiliza terminalul pentru a lansa și a executa
+            instrumente științifice deschise reproductibile, cum ar fi
+            <i>Jupyter Notebook, Python, și git,</i> pe care le veți folosi în
+            acest manual.
+          </p>
+          <h3>Shell și Bash</h3>
+          <p>
+            <i>Shell</i> este programul principal pe care computerele îl
+            folosesc pentru a primi cod (adică comenzi) și a returna
+            informațiile produse prin executarea acestor comenzi (adică ieșire).
+          </p>
+          <p>
+            Aceste comenzi pot fi introduse și executate prin intermediul
+            terminalului. Acest lucru vă permite să vă controlați computerul
+            tastând comenzi cu o tastatură, în loc să utilizați butoane sau
+            meniuri drop-down într-o GUI cu un mouse/tastatură.
+          </p>
+          <p>
+            <i>Bash</i> (cunoscut și sub numele de <i>„Bourne Again SHell”</i>)
+            este o implementare a Shell și vă permite să efectuați eficient
+            multe sarcini. De exemplu, puteți utiliza Bash pentru a efectua
+            operațiuni pe mai multe fișiere rapid prin linia de comandă.
+          </p>
+          <h3>De ce este Bash important?</h3>
+          <p>
+            Utilizarea Bash în terminal este o modalitate puternică de a
+            interacționa cu computerul. GUI-urile și linia de comandă Bash sunt
+            complementare - cunoscându-le pe ambele, veți extinde foarte mult
+            gama de sarcini pe care le puteți realiza cu computerul dvs.
+          </p>
+          <p>
+            Cu ajutorul comenzilor Bash, veți putea îndeplini multe sarcini mai
+            eficient și veți automatiza și replica fluxurile de lucru pe
+            diferite sisteme de operare. Sarcinile comune pe care le puteți rula
+            la linia de comandă includ verificarea directorului de lucru curent,
+            schimbarea directoarelor, crearea unui director nou, extragerea
+            fișierelor și găsirea fișierelor pe computer.
+          </p>
+          <p>Lucrul în terminal cu Bash vă oferă posibilitatea de a:</p>
+          <ul>
+            <li>
+              naviga cu ușurință pe computer pentru a accesa și gestiona fișiere
+              și foldere (adică directoare).
+            </li>
+            <li>
+              lucra rapid și eficient cu mai multe fișiere și directoare
+              simultan.
+            </li>
+            <li>
+              rula programe care oferă mai multe funcționalități la linia de
+              comandă (de ex git. ).
+            </li>
+            <li>
+              lansa programe din directoare specifice de pe computer (de ex
+              Jupyter Notebook. ).
+            </li>
+            <li>
+              utiliza comenzi repetabile pentru aceste sarcini pe mai multe
+              sisteme de operare diferite (Windows, Mac, Linux).
+            </li>
+          </ul>
+        </section>
+        <section class="section_terminal">
+          <h2>Configurare Bash</h2>
+          <h3>Instalați Bash pentru Windows</h3>
+          <p>
+            Există multe opțiuni pentru a rula Bash pe Windows. Pentru acest
+            manual, veți folosi <i>Git Bash </i>ceea ce vine odată cu instalarea
+            <i>git</i>. Instrucțiunile pentru configurarea acesteia sunt
+            urmatoarele:
+          </p>
+          <p>
+            Descărcați programul de
+            <a href="https://git-scm.com/download/win"
+              >instalare Git pentru Windows</a
+            >
+            .
+          </p>
+
+          <p>
+            Rulați programul de instalare făcând dublu clic pe fișierul
+            descărcat și urmând pașii de mai jos:
+          </p>
+
+          <ol>
+            <li>Faceți clic pe „Run”.</li>
+            <li>Faceți clic pe „Următorul”.</li>
+            <li>Faceți clic pe „Următorul”.</li>
+            <li>Faceți clic pe „Următorul”.</li>
+            <li>Faceți clic pe „Următorul”.</li>
+            <li>Faceți clic pe „Următorul”.</li>
+            <li>
+              <span class="bold_txt"
+                >Lăsați selecția pe „Git din linia de comandă și, de asemenea,
+                din software terță parte”</span
+              >
+              și faceți clic pe „Next”. NOTĂ: Dacă ați uitat să faceți acest
+              lucru, programele de care aveți nevoie pentru atelier nu vor
+              funcționa corect. Dacă se întâmplă acest lucru, rulați din nou
+              programul de instalare și selectați opțiunea corespunzătoare.
+            </li>
+            <li>Faceți clic pe „Următorul”.</li>
+            <li>
+              <span class="bold_txt"
+                >Lăsați selecția pe „Checkout Windows-style, commit Unix-style
+                line ends” </span
+              >și faceți clic pe „Next”.
+            </li>
+            <li>
+              Selectați a doua opțiune pentru
+              <span class="bold_txt"
+                >Utilizați fereastra implicită a consolei Windows</span
+              >
+              și faceți clic pe „Următorul”.
+            </li>
+            <li>Faceți clic pe „Următorul”.</li>
+            <li>Faceți clic pe „Instalare”.</li>
+            <li>Când instalarea este finalizată, faceți clic pe „Finish”.</li>
+          </ol>
+          <p>
+            După ce ați instalat gitpe o mașină Windows, puteți deschide acest
+            terminal căutând Git Bashîn meniul de pornire.
+          </p>
+          <img
+            src="../images/git-bash-terminal.png"
+            alt="Asa arata termianlul Git Bash pe Windows"
+          />
+        </section>
+      </div>
+      <br />
+      <footer class="main_footer">
+        <div>
+          <ul>
+            <li><a href="./home_dev_tools.html">Home</a></li>
+            <li><a href="../despre.html">About Me</a></li>
+            <li><a href="../itschool.html">Projects</a></li>
+            <li><a href="./inregistrare.html">Inregistrare</a></li>
+            <li><a href="../despre.html">Contact</a></li>
+          </ul>
+        </div>
+      </footer>
     </div>
   </body>
 </html>
